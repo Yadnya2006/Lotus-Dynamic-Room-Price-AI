@@ -1,0 +1,1001 @@
+Room_Type,Day_Type,Season,Guests,Extra_Guests,Base_Price
+AC Cottage,Weekday,Monsoon,1,1,3342
+AC Cottage,Weekday,New Year,2,0,6530
+AC Cottage,Weekday,Summer,1,1,4566
+AC Executive Rooms,Weekend,Summer,2,2,5414
+AC Cottage,Weekday,Festival,2,2,5159
+AC Suite Room With Jacuzzi,Weekend,Normal,1,3,8099
+AC Executive Suite Room,Weekend,New Year,5,0,16494
+AC Deluxe Cottage,Weekday,Festival,1,2,7424
+AC Executive Rooms,Weekend,New Year,1,0,8546
+AC Suite Room With Jacuzzi,Weekend,Normal,2,0,8389
+AC Executive Suite Room,Weekend,Monsoon,3,2,7363
+AC Suite Room With Jacuzzi,Weekend,Normal,5,1,8546
+AC Suite Room With Jacuzzi,Weekday,Festival,4,2,11895
+AC Executive Rooms,Weekday,Monsoon,1,1,4220
+AC Cottage,Weekend,Festival,2,0,5216
+AC Executive Rooms,Weekend,Summer,2,3,5452
+AC Deluxe Cottage,Weekday,Monsoon,1,1,4181
+AC Executive Rooms,Weekend,New Year,2,3,8870
+AC Suite Room With Jacuzzi,Weekday,New Year,4,0,14547
+AC Cottage,Weekday,Summer,1,3,4505
+AC Cottage,Weekend,Festival,2,2,5994
+AC Executive Rooms,Weekday,Normal,2,2,4057
+AC Executive Suite Room,Weekend,Summer,8,0,12976
+AC Executive Suite Room,Weekday,New Year,2,2,16723
+AC Executive Rooms,Weekday,Summer,2,1,5276
+AC Executive Rooms,Weekday,New Year,2,3,8519
+AC Cottage,Weekend,Monsoon,1,0,3446
+AC Executive Rooms,Weekday,Normal,2,0,4500
+AC Executive Rooms,Weekday,Summer,2,1,5135
+AC Executive Rooms,Weekend,Summer,1,2,5204
+AC Executive Suite Room,Weekend,New Year,8,0,15507
+AC Suite Room With Jacuzzi,Weekday,Monsoon,1,1,6102
+AC Suite Room With Jacuzzi,Weekday,Normal,6,0,6234
+AC Cottage,Weekday,Monsoon,1,1,3485
+AC Deluxe Cottage,Weekday,New Year,1,3,8748
+AC Deluxe Cottage,Weekend,Summer,1,0,5337
+AC Deluxe Cottage,Weekend,Festival,2,3,7442
+AC Cottage,Weekday,Normal,2,2,3909
+AC Cottage,Weekday,Summer,1,3,4271
+AC Deluxe Cottage,Weekday,Monsoon,2,1,4247
+AC Cottage,Weekend,New Year,1,0,7167
+AC Executive Rooms,Weekday,Normal,1,1,4208
+AC Deluxe Cottage,Weekend,Summer,2,0,5084
+AC Deluxe Cottage,Weekday,Festival,2,3,7146
+AC Deluxe Cottage,Weekend,Summer,1,2,5111
+AC Cottage,Weekday,Monsoon,1,0,3798
+AC Deluxe Cottage,Weekday,Normal,1,1,4035
+AC Executive Rooms,Weekday,Summer,2,0,5482
+AC Executive Rooms,Weekday,New Year,1,0,8929
+AC Executive Rooms,Weekend,Monsoon,1,2,3922
+AC Executive Suite Room,Weekend,Summer,5,3,12323
+AC Cottage,Weekday,Festival,1,0,5550
+AC Suite Room With Jacuzzi,Weekend,Summer,3,0,9400
+AC Suite Room With Jacuzzi,Weekend,Monsoon,2,3,6353
+AC Executive Rooms,Weekend,New Year,1,2,9454
+AC Cottage,Weekday,Monsoon,1,0,3766
+AC Suite Room With Jacuzzi,Weekend,Monsoon,5,1,6234
+AC Executive Suite Room,Weekday,Monsoon,8,2,7927
+AC Cottage,Weekday,Festival,2,0,5003
+AC Executive Suite Room,Weekday,Monsoon,3,3,7564
+AC Deluxe Cottage,Weekday,Normal,1,1,4279
+AC Cottage,Weekend,New Year,1,3,6630
+AC Cottage,Weekend,Monsoon,1,2,3415
+AC Suite Room With Jacuzzi,Weekday,Monsoon,5,3,6497
+AC Executive Rooms,Weekday,Summer,1,1,5451
+AC Deluxe Cottage,Weekday,Summer,2,3,5410
+AC Suite Room With Jacuzzi,Weekend,Summer,6,0,8891
+AC Cottage,Weekend,Summer,1,3,4379
+AC Executive Suite Room,Weekday,Summer,1,1,12408
+AC Executive Suite Room,Weekend,Normal,5,2,11656
+AC Executive Rooms,Weekend,New Year,2,0,8618
+AC Executive Suite Room,Weekday,New Year,5,0,15222
+AC Executive Rooms,Weekend,Monsoon,2,3,4110
+AC Executive Rooms,Weekday,Festival,1,2,7022
+AC Deluxe Cottage,Weekday,New Year,1,2,8941
+AC Cottage,Weekend,New Year,2,0,7237
+AC Executive Suite Room,Weekend,Festival,6,3,13713
+AC Executive Suite Room,Weekday,Summer,7,3,12693
+AC Suite Room With Jacuzzi,Weekend,Festival,5,0,10622
+AC Executive Suite Room,Weekday,Festival,6,3,13452
+AC Deluxe Cottage,Weekday,New Year,2,1,9174
+AC Cottage,Weekend,New Year,2,0,7338
+AC Suite Room With Jacuzzi,Weekend,Summer,2,1,8525
+AC Cottage,Weekday,Festival,1,3,5424
+AC Executive Rooms,Weekday,Festival,2,3,7124
+AC Suite Room With Jacuzzi,Weekday,Normal,4,1,6180
+AC Executive Rooms,Weekend,Normal,1,0,4733
+AC Suite Room With Jacuzzi,Weekend,New Year,5,2,14945
+AC Deluxe Cottage,Weekend,New Year,2,1,9261
+AC Deluxe Cottage,Weekend,Monsoon,1,2,4192
+AC Executive Rooms,Weekend,Summer,2,3,5039
+AC Executive Suite Room,Weekday,Monsoon,6,2,7914
+AC Executive Rooms,Weekday,Summer,1,1,5196
+AC Suite Room With Jacuzzi,Weekday,Normal,4,3,6338
+AC Executive Rooms,Weekend,Festival,1,1,7426
+AC Deluxe Cottage,Weekend,New Year,1,3,8988
+AC Cottage,Weekend,Monsoon,2,3,3751
+AC Executive Rooms,Weekday,Festival,1,2,7223
+AC Deluxe Cottage,Weekday,Festival,2,3,7370
+AC Suite Room With Jacuzzi,Weekend,Summer,5,0,9428
+AC Deluxe Cottage,Weekday,Normal,2,1,4443
+AC Deluxe Cottage,Weekday,Normal,2,3,4167
+AC Suite Room With Jacuzzi,Weekend,Monsoon,3,3,5784
+AC Deluxe Cottage,Weekend,Normal,2,0,4883
+AC Executive Rooms,Weekday,Monsoon,1,0,4199
+AC Cottage,Weekday,Summer,1,0,4518
+AC Suite Room With Jacuzzi,Weekday,Summer,4,0,9077
+AC Suite Room With Jacuzzi,Weekend,Monsoon,3,1,6120
+AC Executive Rooms,Weekday,Summer,2,0,5296
+AC Cottage,Weekend,New Year,2,3,7464
+AC Suite Room With Jacuzzi,Weekday,New Year,6,1,13208
+AC Executive Suite Room,Weekday,New Year,1,2,16091
+AC Deluxe Cottage,Weekend,Normal,2,0,4934
+AC Deluxe Cottage,Weekend,Normal,2,2,4825
+AC Deluxe Cottage,Weekday,Festival,1,2,7315
+AC Executive Rooms,Weekend,Festival,2,2,7165
+AC Suite Room With Jacuzzi,Weekday,Monsoon,4,1,6268
+AC Deluxe Cottage,Weekend,Monsoon,1,3,4235
+AC Executive Suite Room,Weekday,Festival,4,2,13816
+AC Executive Suite Room,Weekend,Monsoon,5,0,7529
+AC Suite Room With Jacuzzi,Weekday,Summer,6,3,9000
+AC Executive Rooms,Weekday,Festival,2,3,7405
+AC Cottage,Weekday,Monsoon,1,3,3449
+AC Executive Suite Room,Weekend,Festival,6,3,13763
+AC Executive Rooms,Weekend,Monsoon,2,2,3956
+AC Executive Suite Room,Weekday,Normal,4,2,7561
+AC Executive Rooms,Weekday,Summer,1,3,5141
+AC Executive Rooms,Weekend,Normal,1,2,4616
+AC Executive Suite Room,Weekday,Monsoon,1,1,7280
+AC Cottage,Weekday,New Year,2,1,7153
+AC Deluxe Cottage,Weekday,Normal,2,3,4245
+AC Deluxe Cottage,Weekend,Summer,1,2,5481
+AC Deluxe Cottage,Weekday,Normal,2,3,4037
+AC Executive Rooms,Weekday,Summer,1,2,5043
+AC Suite Room With Jacuzzi,Weekday,New Year,4,1,14588
+AC Executive Rooms,Weekend,Festival,2,2,7440
+AC Executive Rooms,Weekend,Monsoon,1,0,4285
+AC Suite Room With Jacuzzi,Weekday,Monsoon,6,0,5660
+AC Suite Room With Jacuzzi,Weekday,New Year,1,1,13005
+AC Deluxe Cottage,Weekend,New Year,2,2,8533
+AC Suite Room With Jacuzzi,Weekend,Monsoon,6,3,5572
+AC Suite Room With Jacuzzi,Weekend,New Year,6,1,13870
+AC Cottage,Weekday,Summer,2,1,4236
+AC Cottage,Weekday,Monsoon,2,3,3327
+AC Deluxe Cottage,Weekend,Festival,2,3,7224
+AC Cottage,Weekday,Festival,2,2,5026
+AC Cottage,Weekday,New Year,1,2,7090
+AC Cottage,Weekday,Festival,2,2,5185
+AC Executive Rooms,Weekend,Festival,1,3,7178
+AC Deluxe Cottage,Weekend,Monsoon,1,1,3968
+AC Deluxe Cottage,Weekend,Monsoon,2,0,4032
+AC Cottage,Weekend,Monsoon,2,0,3613
+AC Executive Rooms,Weekday,New Year,2,3,8555
+AC Suite Room With Jacuzzi,Weekend,New Year,4,3,14556
+AC Cottage,Weekday,Monsoon,1,2,3648
+AC Deluxe Cottage,Weekday,Normal,1,1,4159
+AC Executive Rooms,Weekday,New Year,2,0,8730
+AC Cottage,Weekend,Normal,1,3,4977
+AC Executive Suite Room,Weekend,Festival,8,3,13249
+AC Deluxe Cottage,Weekday,Festival,1,1,7442
+AC Cottage,Weekend,Festival,2,2,5840
+AC Cottage,Weekend,Monsoon,2,1,3657
+AC Executive Rooms,Weekend,Monsoon,2,3,4033
+AC Executive Suite Room,Weekday,Summer,7,1,12876
+AC Deluxe Cottage,Weekday,Monsoon,2,3,3997
+AC Suite Room With Jacuzzi,Weekend,Normal,2,2,8890
+AC Cottage,Weekend,Normal,2,0,4869
+AC Suite Room With Jacuzzi,Weekend,Summer,1,3,9300
+AC Executive Suite Room,Weekend,New Year,7,0,16744
+AC Executive Suite Room,Weekend,Monsoon,8,0,7632
+AC Cottage,Weekday,Monsoon,1,0,3644
+AC Cottage,Weekday,Festival,1,2,5925
+AC Cottage,Weekday,Monsoon,1,2,3567
+AC Executive Suite Room,Weekend,Summer,4,3,12579
+AC Suite Room With Jacuzzi,Weekday,Summer,1,3,9134
+AC Suite Room With Jacuzzi,Weekend,New Year,2,1,13944
+AC Executive Suite Room,Weekend,Monsoon,1,3,7922
+AC Executive Suite Room,Weekday,Normal,8,2,7800
+AC Executive Suite Room,Weekend,Monsoon,8,2,7203
+AC Deluxe Cottage,Weekend,Normal,1,3,4792
+AC Executive Suite Room,Weekend,Monsoon,1,3,7281
+AC Cottage,Weekday,New Year,2,2,7294
+AC Suite Room With Jacuzzi,Weekend,Summer,6,1,9135
+AC Executive Suite Room,Weekday,Normal,1,2,7903
+AC Deluxe Cottage,Weekday,New Year,2,1,8592
+AC Executive Suite Room,Weekend,Festival,3,1,13135
+AC Executive Rooms,Weekend,New Year,2,1,8763
+AC Deluxe Cottage,Weekend,Monsoon,1,3,4293
+AC Cottage,Weekday,Summer,2,2,4246
+AC Deluxe Cottage,Weekday,Monsoon,1,3,3988
+AC Executive Suite Room,Weekend,Monsoon,2,1,7482
+AC Cottage,Weekend,New Year,1,0,7150
+AC Deluxe Cottage,Weekend,Festival,1,1,7023
+AC Cottage,Weekend,Festival,1,0,5240
+AC Executive Rooms,Weekday,Festival,2,2,7343
+AC Executive Rooms,Weekend,New Year,1,3,9170
+AC Cottage,Weekend,New Year,2,2,6533
+AC Executive Suite Room,Weekday,Festival,8,1,13875
+AC Executive Suite Room,Weekday,Monsoon,6,0,7407
+AC Executive Suite Room,Weekday,Normal,8,0,7839
+AC Suite Room With Jacuzzi,Weekday,Normal,3,1,6128
+AC Executive Rooms,Weekday,Normal,1,1,4416
+AC Suite Room With Jacuzzi,Weekend,Summer,5,0,8783
+AC Suite Room With Jacuzzi,Weekday,New Year,3,1,13225
+AC Cottage,Weekday,Normal,2,1,3801
+AC Executive Suite Room,Weekday,Summer,5,0,12129
+AC Deluxe Cottage,Weekday,Normal,2,3,4398
+AC Executive Suite Room,Weekday,Festival,4,0,13744
+AC Executive Rooms,Weekend,Festival,1,0,7245
+AC Deluxe Cottage,Weekend,Normal,2,3,4537
+AC Cottage,Weekend,New Year,1,0,6629
+AC Executive Suite Room,Weekend,Festival,5,3,13517
+AC Executive Rooms,Weekend,Normal,1,1,4720
+AC Deluxe Cottage,Weekday,Festival,2,3,7204
+AC Deluxe Cottage,Weekday,Monsoon,2,2,4140
+AC Executive Suite Room,Weekend,Summer,8,0,12093
+AC Cottage,Weekday,Festival,1,2,5831
+AC Suite Room With Jacuzzi,Weekday,New Year,5,2,14372
+AC Cottage,Weekend,Monsoon,2,0,3494
+AC Executive Rooms,Weekend,Monsoon,1,1,3879
+AC Deluxe Cottage,Weekday,Normal,2,2,4058
+AC Executive Suite Room,Weekday,Festival,1,2,13029
+AC Suite Room With Jacuzzi,Weekend,Monsoon,3,2,5506
+AC Suite Room With Jacuzzi,Weekday,New Year,6,3,13142
+AC Suite Room With Jacuzzi,Weekday,Normal,6,1,6385
+AC Deluxe Cottage,Weekend,Monsoon,1,2,3959
+AC Executive Suite Room,Weekday,Normal,3,1,7886
+AC Executive Rooms,Weekday,Normal,2,3,4338
+AC Deluxe Cottage,Weekend,New Year,2,3,8779
+AC Suite Room With Jacuzzi,Weekday,Monsoon,4,0,5790
+AC Executive Rooms,Weekend,New Year,2,0,8725
+AC Deluxe Cottage,Weekday,Normal,1,2,4484
+AC Suite Room With Jacuzzi,Weekday,Monsoon,3,2,5622
+AC Cottage,Weekend,Festival,1,1,5389
+AC Executive Rooms,Weekday,New Year,2,0,8906
+AC Cottage,Weekend,Normal,2,0,4941
+AC Executive Suite Room,Weekend,New Year,7,3,15592
+AC Cottage,Weekend,Normal,2,1,4910
+AC Executive Rooms,Weekend,Monsoon,1,3,4232
+AC Cottage,Weekday,Festival,2,0,5405
+AC Executive Suite Room,Weekend,Summer,6,1,12078
+AC Executive Rooms,Weekday,New Year,1,2,8859
+AC Suite Room With Jacuzzi,Weekday,Normal,2,2,6202
+AC Suite Room With Jacuzzi,Weekday,Normal,2,3,6475
+AC Executive Rooms,Weekend,New Year,2,2,8654
+AC Deluxe Cottage,Weekday,Festival,2,2,7407
+AC Executive Suite Room,Weekday,Monsoon,2,2,7472
+AC Deluxe Cottage,Weekday,Normal,2,2,4039
+AC Cottage,Weekend,Festival,1,3,5930
+AC Executive Rooms,Weekday,Monsoon,2,1,4290
+AC Cottage,Weekend,Normal,2,0,4758
+AC Suite Room With Jacuzzi,Weekday,Summer,6,3,8949
+AC Executive Rooms,Weekday,Monsoon,2,2,3998
+AC Deluxe Cottage,Weekend,New Year,1,2,8567
+AC Executive Suite Room,Weekday,New Year,7,2,15516
+AC Executive Rooms,Weekday,Monsoon,1,1,4269
+AC Executive Suite Room,Weekend,Festival,3,0,13317
+AC Executive Rooms,Weekend,Monsoon,1,0,4130
+AC Deluxe Cottage,Weekend,Normal,2,2,4592
+AC Suite Room With Jacuzzi,Weekend,Festival,2,1,10281
+AC Suite Room With Jacuzzi,Weekday,Monsoon,1,0,6177
+AC Executive Suite Room,Weekday,New Year,7,1,15332
+AC Suite Room With Jacuzzi,Weekday,Festival,1,3,10746
+AC Suite Room With Jacuzzi,Weekend,New Year,3,3,13479
+AC Executive Rooms,Weekday,Monsoon,2,1,3988
+AC Executive Rooms,Weekend,Festival,2,3,7257
+AC Executive Rooms,Weekend,Summer,1,1,5446
+AC Executive Suite Room,Weekday,Festival,6,0,13728
+AC Executive Rooms,Weekday,Monsoon,1,1,3939
+AC Deluxe Cottage,Weekday,Festival,1,1,7418
+AC Deluxe Cottage,Weekend,Normal,2,0,4702
+AC Executive Rooms,Weekend,Summer,2,0,5191
+AC Suite Room With Jacuzzi,Weekday,Monsoon,1,2,6310
+AC Suite Room With Jacuzzi,Weekday,Normal,3,3,6712
+AC Suite Room With Jacuzzi,Weekend,Festival,5,0,11855
+AC Cottage,Weekday,Monsoon,1,1,3761
+AC Executive Rooms,Weekend,Normal,2,1,4654
+AC Cottage,Weekday,Summer,2,3,4232
+AC Cottage,Weekend,New Year,1,1,7235
+AC Suite Room With Jacuzzi,Weekend,Festival,1,2,10492
+AC Executive Rooms,Weekend,Summer,1,2,5034
+AC Executive Rooms,Weekday,Festival,2,0,7325
+AC Deluxe Cottage,Weekend,Monsoon,1,2,4203
+AC Cottage,Weekend,Summer,1,2,4268
+AC Cottage,Weekend,New Year,2,1,7350
+AC Deluxe Cottage,Weekend,Summer,1,0,5366
+AC Deluxe Cottage,Weekday,Monsoon,1,0,4205
+AC Suite Room With Jacuzzi,Weekday,Monsoon,3,3,6334
+AC Executive Rooms,Weekend,Monsoon,1,1,3946
+AC Executive Suite Room,Weekday,Monsoon,5,0,7818
+AC Executive Suite Room,Weekend,Festival,8,3,13347
+AC Suite Room With Jacuzzi,Weekend,Festival,3,2,11640
+AC Cottage,Weekend,Normal,2,1,4779
+AC Executive Suite Room,Weekend,Normal,2,2,11676
+AC Executive Suite Room,Weekend,Festival,7,1,13706
+AC Deluxe Cottage,Weekend,Festival,1,2,7314
+AC Deluxe Cottage,Weekend,Normal,1,3,4686
+AC Executive Rooms,Weekday,Normal,1,3,4017
+AC Suite Room With Jacuzzi,Weekday,Summer,6,2,8870
+AC Deluxe Cottage,Weekday,New Year,1,3,9471
+AC Executive Suite Room,Weekend,Festival,2,1,13542
+AC Executive Suite Room,Weekend,Monsoon,5,1,7983
+AC Cottage,Weekday,Summer,2,3,4667
+AC Executive Rooms,Weekday,Monsoon,2,3,3909
+AC Executive Rooms,Weekend,Festival,1,0,7069
+AC Cottage,Weekend,Summer,2,0,4614
+AC Executive Suite Room,Weekend,Normal,5,2,11871
+AC Suite Room With Jacuzzi,Weekday,Monsoon,5,1,5624
+AC Suite Room With Jacuzzi,Weekday,Summer,4,0,8869
+AC Executive Rooms,Weekend,Festival,1,0,7033
+AC Executive Suite Room,Weekend,Festival,7,3,13843
+AC Executive Rooms,Weekday,Summer,2,0,5230
+AC Deluxe Cottage,Weekend,Summer,1,1,5221
+AC Executive Rooms,Weekday,Normal,1,2,4084
+AC Suite Room With Jacuzzi,Weekend,Summer,3,2,9366
+AC Cottage,Weekend,Summer,2,1,4520
+AC Executive Suite Room,Weekday,New Year,3,1,15350
+AC Executive Rooms,Weekend,New Year,1,0,8583
+AC Cottage,Weekend,Summer,2,0,4454
+AC Executive Rooms,Weekend,Monsoon,2,1,4212
+AC Deluxe Cottage,Weekend,Festival,1,0,7080
+AC Deluxe Cottage,Weekend,Festival,2,1,7174
+AC Executive Rooms,Weekday,Monsoon,2,2,4299
+AC Deluxe Cottage,Weekday,Monsoon,1,2,3923
+AC Deluxe Cottage,Weekday,Monsoon,2,1,3872
+AC Cottage,Weekday,Monsoon,2,3,3454
+AC Suite Room With Jacuzzi,Weekend,New Year,6,2,13388
+AC Suite Room With Jacuzzi,Weekend,New Year,4,3,14800
+AC Executive Suite Room,Weekend,Normal,2,3,11517
+AC Deluxe Cottage,Weekday,Summer,2,0,5025
+AC Executive Suite Room,Weekend,New Year,8,2,16099
+AC Cottage,Weekday,Festival,1,2,5744
+AC Executive Suite Room,Weekend,Monsoon,1,3,7052
+AC Executive Rooms,Weekday,Monsoon,2,0,3997
+AC Executive Rooms,Weekend,New Year,2,0,8631
+AC Cottage,Weekend,Monsoon,2,2,3347
+AC Suite Room With Jacuzzi,Weekend,New Year,1,0,13079
+AC Suite Room With Jacuzzi,Weekend,Festival,5,3,10305
+AC Executive Rooms,Weekday,Monsoon,2,1,4001
+AC Executive Rooms,Weekend,New Year,2,3,9225
+AC Executive Rooms,Weekend,Festival,1,2,7169
+AC Cottage,Weekend,New Year,2,0,7111
+AC Deluxe Cottage,Weekend,New Year,1,0,9097
+AC Deluxe Cottage,Weekday,New Year,2,1,9341
+AC Suite Room With Jacuzzi,Weekday,New Year,6,0,13390
+AC Cottage,Weekend,Monsoon,2,1,3622
+AC Suite Room With Jacuzzi,Weekend,New Year,5,3,14787
+AC Cottage,Weekday,New Year,1,2,7178
+AC Deluxe Cottage,Weekend,Monsoon,1,3,4267
+AC Executive Rooms,Weekend,New Year,2,2,9124
+AC Deluxe Cottage,Weekday,Summer,2,2,5115
+AC Executive Suite Room,Weekend,Summer,8,2,12491
+AC Executive Suite Room,Weekend,Monsoon,2,3,7917
+AC Deluxe Cottage,Weekend,Summer,2,0,5147
+AC Cottage,Weekend,Festival,2,3,5219
+AC Suite Room With Jacuzzi,Weekend,New Year,6,2,13281
+AC Cottage,Weekday,Summer,1,1,4526
+AC Suite Room With Jacuzzi,Weekday,Normal,4,2,6734
+AC Deluxe Cottage,Weekday,Summer,1,1,5208
+AC Deluxe Cottage,Weekend,Summer,2,2,5146
+AC Cottage,Weekday,New Year,1,0,7435
+AC Suite Room With Jacuzzi,Weekend,Summer,1,3,9306
+AC Deluxe Cottage,Weekday,Monsoon,1,0,3952
+AC Executive Rooms,Weekday,Monsoon,2,3,4128
+AC Executive Rooms,Weekend,Summer,2,2,5098
+AC Cottage,Weekend,Summer,2,2,4567
+AC Suite Room With Jacuzzi,Weekday,Monsoon,3,1,5679
+AC Executive Rooms,Weekend,Festival,2,0,7205
+AC Cottage,Weekday,Summer,2,2,4679
+AC Suite Room With Jacuzzi,Weekday,Monsoon,4,1,5957
+AC Executive Suite Room,Weekend,Monsoon,1,2,7669
+AC Executive Suite Room,Weekday,Normal,2,3,7657
+AC Suite Room With Jacuzzi,Weekend,New Year,6,2,14413
+AC Cottage,Weekend,Monsoon,1,1,3336
+AC Deluxe Cottage,Weekday,Festival,2,3,7359
+AC Executive Rooms,Weekend,New Year,1,1,9196
+AC Executive Rooms,Weekday,New Year,2,2,8579
+AC Executive Rooms,Weekday,Normal,1,1,4084
+AC Executive Suite Room,Weekend,Normal,4,3,11093
+AC Executive Rooms,Weekend,Normal,2,1,4762
+AC Deluxe Cottage,Weekend,New Year,1,3,9188
+AC Executive Suite Room,Weekday,Festival,5,0,13763
+AC Suite Room With Jacuzzi,Weekday,Normal,4,2,6717
+AC Cottage,Weekday,Normal,2,0,3646
+AC Deluxe Cottage,Weekday,Summer,2,2,5456
+AC Deluxe Cottage,Weekend,Festival,2,0,7349
+AC Executive Rooms,Weekday,Monsoon,1,1,4075
+AC Deluxe Cottage,Weekday,Summer,1,0,5500
+AC Executive Suite Room,Weekend,New Year,7,3,16686
+AC Suite Room With Jacuzzi,Weekday,Festival,3,1,10564
+AC Suite Room With Jacuzzi,Weekday,Normal,6,3,6629
+AC Cottage,Weekday,Summer,1,0,4504
+AC Cottage,Weekend,New Year,1,1,7258
+AC Cottage,Weekend,Festival,1,1,5772
+AC Cottage,Weekday,New Year,2,1,7335
+AC Executive Rooms,Weekend,New Year,2,1,8809
+AC Suite Room With Jacuzzi,Weekday,Festival,3,2,10124
+AC Executive Rooms,Weekday,Festival,2,0,7497
+AC Executive Suite Room,Weekend,New Year,6,3,15836
+AC Suite Room With Jacuzzi,Weekend,Festival,2,3,10493
+AC Suite Room With Jacuzzi,Weekend,Summer,4,0,9075
+AC Deluxe Cottage,Weekend,New Year,1,3,8748
+AC Executive Suite Room,Weekday,Monsoon,2,3,7867
+AC Executive Suite Room,Weekday,New Year,4,0,15549
+AC Deluxe Cottage,Weekday,Normal,1,1,4245
+AC Suite Room With Jacuzzi,Weekend,Monsoon,1,1,6459
+AC Suite Room With Jacuzzi,Weekday,Festival,2,1,10812
+AC Suite Room With Jacuzzi,Weekend,Monsoon,4,3,6046
+AC Executive Suite Room,Weekend,Monsoon,6,3,7477
+AC Cottage,Weekend,Monsoon,1,2,3520
+AC Deluxe Cottage,Weekday,New Year,1,1,8516
+AC Executive Suite Room,Weekend,Monsoon,3,1,7337
+AC Suite Room With Jacuzzi,Weekend,New Year,2,3,14127
+AC Executive Suite Room,Weekend,Festival,8,3,13172
+AC Executive Suite Room,Weekday,Summer,8,1,12938
+AC Executive Rooms,Weekday,New Year,1,0,9467
+AC Cottage,Weekday,Festival,1,1,5069
+AC Suite Room With Jacuzzi,Weekday,Summer,5,3,8882
+AC Cottage,Weekend,Festival,1,0,5544
+AC Executive Rooms,Weekend,Normal,1,2,4774
+AC Executive Suite Room,Weekday,New Year,7,1,15219
+AC Cottage,Weekday,Summer,1,2,4617
+AC Executive Suite Room,Weekend,Festival,2,2,13982
+AC Deluxe Cottage,Weekend,New Year,1,1,8807
+AC Cottage,Weekday,Normal,2,3,3693
+AC Executive Rooms,Weekend,Normal,1,1,4542
+AC Deluxe Cottage,Weekend,Monsoon,1,0,3917
+AC Suite Room With Jacuzzi,Weekend,Monsoon,1,0,6200
+AC Executive Suite Room,Weekday,Summer,6,0,12984
+AC Suite Room With Jacuzzi,Weekday,Festival,1,2,10332
+AC Executive Rooms,Weekday,New Year,2,2,8893
+AC Suite Room With Jacuzzi,Weekday,New Year,6,2,13109
+AC Cottage,Weekend,Summer,1,2,4509
+AC Executive Rooms,Weekend,Monsoon,1,2,4201
+AC Deluxe Cottage,Weekend,Summer,2,3,5221
+AC Suite Room With Jacuzzi,Weekend,Normal,5,2,8817
+AC Suite Room With Jacuzzi,Weekday,Normal,3,1,6389
+AC Suite Room With Jacuzzi,Weekend,Monsoon,3,0,5593
+AC Cottage,Weekend,Festival,2,2,5104
+AC Suite Room With Jacuzzi,Weekday,Summer,4,3,9070
+AC Executive Rooms,Weekend,Normal,1,0,4681
+AC Executive Rooms,Weekday,New Year,2,3,8512
+AC Executive Suite Room,Weekend,Festival,2,1,13585
+AC Executive Rooms,Weekday,Festival,1,1,7137
+AC Executive Suite Room,Weekend,Festival,3,0,13171
+AC Deluxe Cottage,Weekend,Festival,2,3,7400
+AC Cottage,Weekend,Monsoon,1,3,3400
+AC Deluxe Cottage,Weekday,Summer,2,0,5485
+AC Deluxe Cottage,Weekend,New Year,2,2,8950
+AC Executive Suite Room,Weekend,New Year,3,2,15656
+AC Executive Rooms,Weekday,Festival,2,1,7493
+AC Deluxe Cottage,Weekend,Monsoon,2,1,3966
+AC Deluxe Cottage,Weekend,Festival,2,0,7477
+AC Executive Rooms,Weekday,New Year,1,0,9475
+AC Deluxe Cottage,Weekday,Festival,2,0,7419
+AC Deluxe Cottage,Weekend,Summer,2,1,5129
+AC Suite Room With Jacuzzi,Weekend,Festival,1,3,11224
+AC Deluxe Cottage,Weekend,New Year,2,0,9309
+AC Executive Suite Room,Weekday,Normal,4,2,7585
+AC Executive Rooms,Weekday,New Year,2,2,9488
+AC Deluxe Cottage,Weekday,Normal,1,2,4113
+AC Executive Rooms,Weekday,Festival,2,3,7237
+AC Executive Rooms,Weekday,Monsoon,1,3,3853
+AC Executive Suite Room,Weekend,Normal,2,1,11356
+AC Executive Suite Room,Weekend,Festival,4,3,13356
+AC Deluxe Cottage,Weekday,Festival,2,2,7034
+AC Executive Suite Room,Weekday,Normal,1,2,7831
+AC Cottage,Weekday,Summer,1,1,4369
+AC Executive Rooms,Weekend,Festival,1,3,7322
+AC Suite Room With Jacuzzi,Weekday,Festival,4,0,11510
+AC Executive Rooms,Weekday,Festival,2,3,7002
+AC Suite Room With Jacuzzi,Weekday,Monsoon,6,0,6091
+AC Cottage,Weekday,Monsoon,2,1,3668
+AC Cottage,Weekend,Festival,2,3,5625
+AC Deluxe Cottage,Weekday,Monsoon,2,3,4116
+AC Suite Room With Jacuzzi,Weekend,New Year,5,0,14376
+AC Suite Room With Jacuzzi,Weekend,Normal,2,2,8119
+AC Suite Room With Jacuzzi,Weekend,Summer,5,3,8928
+AC Executive Rooms,Weekday,New Year,2,3,8690
+AC Deluxe Cottage,Weekday,New Year,1,3,8795
+AC Suite Room With Jacuzzi,Weekday,Monsoon,4,0,6386
+AC Executive Suite Room,Weekday,Festival,3,1,13834
+AC Deluxe Cottage,Weekend,Festival,2,3,7363
+AC Deluxe Cottage,Weekend,Summer,1,0,5407
+AC Suite Room With Jacuzzi,Weekend,Normal,3,1,8550
+AC Executive Suite Room,Weekday,Festival,8,0,13586
+AC Cottage,Weekend,New Year,2,0,7278
+AC Deluxe Cottage,Weekday,Festival,1,1,7152
+AC Cottage,Weekend,Monsoon,2,0,3649
+AC Cottage,Weekday,Summer,2,3,4284
+AC Executive Rooms,Weekday,Summer,1,0,5291
+AC Executive Suite Room,Weekend,New Year,3,2,16441
+AC Executive Suite Room,Weekend,New Year,5,0,15277
+AC Deluxe Cottage,Weekday,Monsoon,1,1,3927
+AC Suite Room With Jacuzzi,Weekend,Summer,6,3,9001
+AC Suite Room With Jacuzzi,Weekend,Festival,4,3,10154
+AC Cottage,Weekend,New Year,2,2,6965
+AC Deluxe Cottage,Weekend,New Year,1,0,9248
+AC Deluxe Cottage,Weekend,Normal,2,1,4995
+AC Deluxe Cottage,Weekday,Festival,2,2,7424
+AC Executive Suite Room,Weekend,New Year,3,3,16614
+AC Executive Suite Room,Weekday,Normal,2,3,7508
+AC Cottage,Weekday,Festival,2,0,5981
+AC Deluxe Cottage,Weekday,Summer,2,1,5447
+AC Executive Suite Room,Weekday,Monsoon,5,0,7380
+AC Suite Room With Jacuzzi,Weekday,Festival,6,2,11486
+AC Suite Room With Jacuzzi,Weekend,Normal,6,0,8001
+AC Suite Room With Jacuzzi,Weekend,Normal,2,1,8531
+AC Deluxe Cottage,Weekday,Normal,2,0,4440
+AC Deluxe Cottage,Weekday,Festival,1,1,7196
+AC Cottage,Weekday,Normal,2,2,3951
+AC Executive Suite Room,Weekday,Festival,3,1,13070
+AC Executive Rooms,Weekday,New Year,1,3,8859
+AC Suite Room With Jacuzzi,Weekday,Festival,5,3,11761
+AC Suite Room With Jacuzzi,Weekday,Normal,2,0,6603
+AC Deluxe Cottage,Weekend,Festival,2,1,7126
+AC Executive Suite Room,Weekday,Summer,5,0,12868
+AC Executive Suite Room,Weekday,New Year,4,3,15605
+AC Cottage,Weekday,Festival,2,0,5246
+AC Deluxe Cottage,Weekday,New Year,1,2,9456
+AC Executive Suite Room,Weekday,Festival,7,2,13559
+AC Suite Room With Jacuzzi,Weekend,Normal,1,0,8014
+AC Executive Suite Room,Weekday,Normal,1,3,7759
+AC Executive Suite Room,Weekend,Festival,7,0,13655
+AC Executive Rooms,Weekday,Monsoon,1,2,3840
+AC Executive Rooms,Weekday,Summer,2,3,5300
+AC Cottage,Weekend,Festival,1,0,5250
+AC Cottage,Weekend,Normal,2,0,4658
+AC Suite Room With Jacuzzi,Weekday,Normal,6,1,6718
+AC Cottage,Weekday,Festival,2,2,5170
+AC Executive Suite Room,Weekday,Monsoon,2,0,7343
+AC Deluxe Cottage,Weekend,New Year,1,2,9229
+AC Executive Rooms,Weekday,Festival,2,2,7028
+AC Deluxe Cottage,Weekday,Monsoon,1,2,4195
+AC Cottage,Weekday,Summer,1,0,4639
+AC Cottage,Weekday,Normal,2,2,3696
+AC Suite Room With Jacuzzi,Weekday,Normal,5,3,6229
+AC Executive Suite Room,Weekday,Festival,6,2,13845
+AC Cottage,Weekend,Normal,1,1,4614
+AC Executive Rooms,Weekday,Festival,1,3,7443
+AC Executive Suite Room,Weekend,Monsoon,2,3,7008
+AC Executive Suite Room,Weekday,Monsoon,5,1,7475
+AC Executive Suite Room,Weekend,Summer,4,1,12006
+AC Deluxe Cottage,Weekday,Summer,2,0,5486
+AC Executive Suite Room,Weekday,Festival,5,0,13210
+AC Executive Rooms,Weekday,Festival,2,0,7497
+AC Suite Room With Jacuzzi,Weekend,Normal,1,1,8918
+AC Executive Rooms,Weekend,Monsoon,2,0,4097
+AC Cottage,Weekday,Festival,1,0,5445
+AC Suite Room With Jacuzzi,Weekday,Monsoon,3,2,6448
+AC Deluxe Cottage,Weekend,Monsoon,2,2,3919
+AC Cottage,Weekday,Summer,1,1,4254
+AC Suite Room With Jacuzzi,Weekend,Festival,3,3,10247
+AC Executive Rooms,Weekend,Summer,2,2,5237
+AC Executive Suite Room,Weekday,Normal,3,2,7923
+AC Executive Rooms,Weekday,Summer,2,1,5046
+AC Suite Room With Jacuzzi,Weekend,Festival,5,0,11386
+AC Executive Suite Room,Weekend,Summer,1,3,12875
+AC Deluxe Cottage,Weekday,Normal,2,0,4411
+AC Suite Room With Jacuzzi,Weekday,Normal,1,1,6133
+AC Suite Room With Jacuzzi,Weekend,Monsoon,6,0,6096
+AC Executive Rooms,Weekend,Normal,1,0,4601
+AC Deluxe Cottage,Weekday,Normal,2,0,4021
+AC Deluxe Cottage,Weekday,Summer,2,3,5254
+AC Cottage,Weekend,Festival,1,2,5219
+AC Suite Room With Jacuzzi,Weekend,Monsoon,4,1,5535
+AC Executive Rooms,Weekday,Monsoon,2,3,4251
+AC Executive Rooms,Weekend,Normal,1,2,4696
+AC Suite Room With Jacuzzi,Weekend,Summer,6,1,9145
+AC Executive Rooms,Weekday,Festival,2,3,7278
+AC Deluxe Cottage,Weekend,New Year,2,3,8776
+AC Suite Room With Jacuzzi,Weekday,Monsoon,5,1,5530
+AC Executive Suite Room,Weekday,Festival,6,1,13997
+AC Suite Room With Jacuzzi,Weekday,Summer,6,1,8772
+AC Executive Rooms,Weekday,Summer,2,2,5478
+AC Suite Room With Jacuzzi,Weekday,Summer,5,2,9325
+AC Executive Suite Room,Weekday,Monsoon,3,1,7856
+AC Deluxe Cottage,Weekend,Summer,2,0,5046
+AC Cottage,Weekday,New Year,1,0,7039
+AC Deluxe Cottage,Weekday,Monsoon,1,1,3974
+AC Suite Room With Jacuzzi,Weekend,Normal,1,1,8600
+AC Suite Room With Jacuzzi,Weekday,New Year,3,0,13765
+AC Deluxe Cottage,Weekday,Monsoon,2,2,3869
+AC Suite Room With Jacuzzi,Weekend,Festival,6,2,10356
+AC Executive Rooms,Weekend,Summer,1,3,5157
+AC Executive Suite Room,Weekday,Summer,1,3,12871
+AC Executive Rooms,Weekday,Summer,2,1,5327
+AC Executive Rooms,Weekday,Festival,1,2,7381
+AC Cottage,Weekday,Monsoon,2,1,3290
+AC Executive Suite Room,Weekend,Normal,5,1,11255
+AC Cottage,Weekend,Monsoon,1,0,3249
+AC Deluxe Cottage,Weekend,Festival,1,3,7252
+AC Deluxe Cottage,Weekend,New Year,2,0,9348
+AC Deluxe Cottage,Weekday,Summer,2,0,5409
+AC Cottage,Weekend,Normal,2,2,4987
+AC Cottage,Weekday,Monsoon,1,3,3364
+AC Cottage,Weekday,Monsoon,2,0,3641
+AC Suite Room With Jacuzzi,Weekend,Summer,1,0,8839
+AC Suite Room With Jacuzzi,Weekday,Festival,6,2,11352
+AC Executive Suite Room,Weekend,Summer,2,0,12402
+AC Executive Rooms,Weekend,Summer,1,2,5001
+AC Deluxe Cottage,Weekday,Monsoon,2,1,3849
+AC Cottage,Weekday,Summer,2,0,4442
+AC Cottage,Weekend,Festival,2,3,5916
+AC Executive Suite Room,Weekday,New Year,7,1,15759
+AC Deluxe Cottage,Weekend,Summer,2,0,5134
+AC Deluxe Cottage,Weekend,Monsoon,1,2,4088
+AC Cottage,Weekday,Normal,1,2,3913
+AC Executive Rooms,Weekend,New Year,1,0,9360
+AC Deluxe Cottage,Weekend,New Year,2,1,8987
+AC Executive Suite Room,Weekday,Festival,1,1,13123
+AC Deluxe Cottage,Weekday,Summer,1,1,5064
+AC Cottage,Weekend,Normal,2,1,4921
+AC Suite Room With Jacuzzi,Weekend,Monsoon,6,0,5589
+AC Deluxe Cottage,Weekend,New Year,2,2,9032
+AC Deluxe Cottage,Weekday,New Year,2,0,8924
+AC Suite Room With Jacuzzi,Weekday,New Year,5,0,14894
+AC Cottage,Weekday,Monsoon,2,3,3470
+AC Deluxe Cottage,Weekend,New Year,2,0,8676
+AC Executive Suite Room,Weekend,Summer,7,0,12405
+AC Executive Suite Room,Weekday,Normal,8,2,7959
+AC Executive Suite Room,Weekday,Monsoon,5,2,7287
+AC Deluxe Cottage,Weekday,Summer,1,2,5498
+AC Deluxe Cottage,Weekend,Monsoon,2,0,3896
+AC Deluxe Cottage,Weekday,Festival,2,2,7420
+AC Cottage,Weekday,Normal,2,3,3569
+AC Executive Rooms,Weekday,Summer,1,1,5428
+AC Cottage,Weekday,Normal,2,0,3970
+AC Executive Suite Room,Weekday,Monsoon,6,3,7517
+AC Deluxe Cottage,Weekday,Normal,1,2,4250
+AC Executive Rooms,Weekend,Summer,2,2,5176
+AC Suite Room With Jacuzzi,Weekend,Normal,3,0,8395
+AC Cottage,Weekday,New Year,1,1,7162
+AC Suite Room With Jacuzzi,Weekday,Monsoon,6,3,6025
+AC Cottage,Weekday,Festival,1,1,5615
+AC Cottage,Weekday,Monsoon,2,2,3633
+AC Deluxe Cottage,Weekend,Festival,2,1,7238
+AC Executive Suite Room,Weekend,New Year,2,0,16047
+AC Executive Suite Room,Weekend,Monsoon,2,3,7065
+AC Executive Suite Room,Weekend,Monsoon,5,2,7671
+AC Executive Suite Room,Weekday,Summer,4,0,12824
+AC Executive Rooms,Weekend,Monsoon,1,0,4135
+AC Deluxe Cottage,Weekend,Monsoon,2,3,3998
+AC Cottage,Weekday,Monsoon,1,3,3567
+AC Executive Rooms,Weekend,Summer,1,2,5049
+AC Deluxe Cottage,Weekday,Monsoon,1,2,4135
+AC Cottage,Weekday,Monsoon,1,2,3630
+AC Executive Suite Room,Weekend,Monsoon,5,3,7871
+AC Cottage,Weekend,Normal,1,3,4955
+AC Suite Room With Jacuzzi,Weekday,Festival,5,2,10846
+AC Cottage,Weekday,Summer,1,2,4409
+AC Executive Rooms,Weekend,Summer,2,1,5398
+AC Cottage,Weekend,Monsoon,1,2,3259
+AC Cottage,Weekend,Monsoon,1,1,3790
+AC Suite Room With Jacuzzi,Weekend,Normal,2,3,8648
+AC Deluxe Cottage,Weekend,Festival,2,3,7002
+AC Cottage,Weekday,Monsoon,1,2,3743
+AC Suite Room With Jacuzzi,Weekday,Normal,6,1,6231
+AC Executive Suite Room,Weekend,Summer,2,3,12515
+AC Executive Rooms,Weekend,Summer,1,0,5152
+AC Executive Suite Room,Weekend,New Year,6,3,16818
+AC Suite Room With Jacuzzi,Weekend,Festival,3,1,10337
+AC Deluxe Cottage,Weekday,Summer,1,1,5108
+AC Cottage,Weekday,Normal,2,0,3692
+AC Executive Suite Room,Weekday,New Year,1,0,16338
+AC Cottage,Weekday,Normal,2,3,3694
+AC Cottage,Weekend,Festival,1,1,5711
+AC Cottage,Weekend,Festival,1,2,5637
+AC Executive Rooms,Weekday,Festival,1,0,7144
+AC Cottage,Weekday,Festival,1,1,5796
+AC Executive Suite Room,Weekday,Monsoon,7,2,7164
+AC Cottage,Weekend,Summer,2,2,4320
+AC Cottage,Weekday,Normal,1,3,3576
+AC Cottage,Weekday,Normal,2,1,3733
+AC Executive Suite Room,Weekend,Festival,1,0,13832
+AC Suite Room With Jacuzzi,Weekday,Monsoon,3,2,5936
+AC Cottage,Weekday,Normal,1,1,3839
+AC Suite Room With Jacuzzi,Weekend,Monsoon,4,2,6399
+AC Cottage,Weekend,Monsoon,1,0,3610
+AC Deluxe Cottage,Weekend,Monsoon,2,3,4209
+AC Deluxe Cottage,Weekday,Normal,1,0,4482
+AC Suite Room With Jacuzzi,Weekday,Festival,5,3,11643
+AC Executive Rooms,Weekend,Summer,2,2,5313
+AC Cottage,Weekday,Festival,2,0,5908
+AC Deluxe Cottage,Weekend,Normal,1,2,4835
+AC Executive Suite Room,Weekday,New Year,4,2,16063
+AC Executive Rooms,Weekday,Festival,1,3,7177
+AC Deluxe Cottage,Weekday,New Year,1,0,9158
+AC Suite Room With Jacuzzi,Weekend,Festival,2,0,11538
+AC Deluxe Cottage,Weekend,Summer,2,2,5025
+AC Executive Rooms,Weekday,New Year,2,3,9336
+AC Suite Room With Jacuzzi,Weekday,Festival,4,3,10180
+AC Deluxe Cottage,Weekend,Monsoon,1,3,4181
+AC Cottage,Weekday,Festival,2,0,5570
+AC Executive Rooms,Weekday,Normal,2,1,4335
+AC Deluxe Cottage,Weekend,Monsoon,1,1,4232
+AC Deluxe Cottage,Weekend,New Year,2,2,9233
+AC Deluxe Cottage,Weekday,Normal,1,0,4174
+AC Executive Suite Room,Weekend,New Year,6,0,15093
+AC Suite Room With Jacuzzi,Weekend,Summer,6,3,8609
+AC Executive Suite Room,Weekday,Summer,2,3,12220
+AC Deluxe Cottage,Weekday,Monsoon,1,3,3823
+AC Executive Rooms,Weekday,Festival,2,1,7493
+AC Deluxe Cottage,Weekday,New Year,1,3,9358
+AC Executive Rooms,Weekend,New Year,1,1,9248
+AC Suite Room With Jacuzzi,Weekday,Festival,6,2,11032
+AC Deluxe Cottage,Weekend,New Year,1,2,8907
+AC Executive Suite Room,Weekend,Festival,3,1,13422
+AC Executive Rooms,Weekend,New Year,2,1,8705
+AC Suite Room With Jacuzzi,Weekend,Monsoon,6,1,6227
+AC Suite Room With Jacuzzi,Weekend,Normal,3,3,8596
+AC Executive Rooms,Weekend,New Year,2,3,9327
+AC Cottage,Weekday,Normal,2,1,3527
+AC Cottage,Weekday,Monsoon,1,2,3456
+AC Suite Room With Jacuzzi,Weekday,Monsoon,2,0,5867
+AC Deluxe Cottage,Weekday,New Year,1,3,8743
+AC Executive Rooms,Weekend,Normal,2,3,4713
+AC Executive Suite Room,Weekday,Normal,5,1,7817
+AC Deluxe Cottage,Weekday,Monsoon,1,1,3950
+AC Deluxe Cottage,Weekday,Normal,1,1,4376
+AC Executive Rooms,Weekday,Festival,1,3,7142
+AC Executive Rooms,Weekend,Summer,1,2,5002
+AC Executive Suite Room,Weekend,Summer,1,1,12950
+AC Executive Suite Room,Weekday,New Year,5,3,16617
+AC Executive Rooms,Weekend,Normal,2,1,4989
+AC Suite Room With Jacuzzi,Weekday,New Year,2,3,14112
+AC Executive Rooms,Weekend,Normal,2,1,4952
+AC Suite Room With Jacuzzi,Weekend,Monsoon,3,2,5723
+AC Executive Rooms,Weekend,New Year,1,0,9184
+AC Executive Suite Room,Weekend,Summer,4,0,12698
+AC Executive Suite Room,Weekend,Normal,7,2,11553
+AC Executive Suite Room,Weekday,New Year,6,3,15996
+AC Cottage,Weekend,Summer,2,0,4685
+AC Cottage,Weekday,New Year,1,0,6715
+AC Suite Room With Jacuzzi,Weekend,Normal,2,3,8662
+AC Cottage,Weekday,Normal,2,2,3519
+AC Cottage,Weekday,Normal,1,2,3785
+AC Cottage,Weekday,Monsoon,2,3,3661
+AC Deluxe Cottage,Weekend,Monsoon,1,3,4144
+AC Cottage,Weekday,New Year,1,0,7217
+AC Cottage,Weekend,New Year,1,2,7305
+AC Executive Suite Room,Weekday,Monsoon,8,3,7404
+AC Cottage,Weekend,Summer,1,1,4582
+AC Deluxe Cottage,Weekend,Summer,2,2,5490
+AC Cottage,Weekday,Normal,1,0,3793
+AC Executive Rooms,Weekend,New Year,1,2,8715
+AC Executive Suite Room,Weekday,Festival,3,1,13188
+AC Suite Room With Jacuzzi,Weekend,Summer,1,1,9187
+AC Executive Rooms,Weekday,New Year,2,0,8797
+AC Cottage,Weekend,Normal,1,3,4987
+AC Executive Suite Room,Weekend,Summer,4,0,12291
+AC Executive Rooms,Weekday,Summer,2,3,5230
+AC Executive Suite Room,Weekend,New Year,3,2,16654
+AC Executive Suite Room,Weekend,Summer,1,2,12252
+AC Suite Room With Jacuzzi,Weekend,Monsoon,3,1,6195
+AC Executive Suite Room,Weekend,Festival,8,2,13793
+AC Executive Suite Room,Weekend,New Year,2,1,16322
+AC Executive Rooms,Weekday,Monsoon,1,1,3934
+AC Cottage,Weekday,Normal,1,3,3893
+AC Executive Rooms,Weekday,Normal,2,3,4334
+AC Suite Room With Jacuzzi,Weekend,Festival,2,2,10274
+AC Deluxe Cottage,Weekday,Festival,2,0,7339
+AC Suite Room With Jacuzzi,Weekday,New Year,2,3,13326
+AC Suite Room With Jacuzzi,Weekday,Festival,3,0,10448
+AC Deluxe Cottage,Weekday,Normal,2,2,4119
+AC Cottage,Weekday,New Year,2,3,6980
+AC Deluxe Cottage,Weekday,Normal,2,0,4360
+AC Executive Rooms,Weekend,Monsoon,1,3,4134
+AC Deluxe Cottage,Weekend,New Year,1,2,8885
+AC Suite Room With Jacuzzi,Weekend,Monsoon,3,3,6311
+AC Deluxe Cottage,Weekday,New Year,1,3,8669
+AC Suite Room With Jacuzzi,Weekday,New Year,6,2,13433
+AC Suite Room With Jacuzzi,Weekday,Summer,3,0,9176
+AC Suite Room With Jacuzzi,Weekend,Monsoon,6,0,5993
+AC Deluxe Cottage,Weekend,Summer,1,3,5011
+AC Suite Room With Jacuzzi,Weekday,Summer,5,1,8637
+AC Executive Rooms,Weekday,New Year,1,0,8670
+AC Executive Suite Room,Weekday,New Year,7,0,16799
+AC Executive Suite Room,Weekday,Summer,8,3,12888
+AC Deluxe Cottage,Weekday,Summer,2,1,5406
+AC Executive Rooms,Weekday,New Year,2,1,9241
+AC Executive Suite Room,Weekend,New Year,2,1,15774
+AC Deluxe Cottage,Weekday,Normal,1,1,4267
+AC Executive Rooms,Weekend,Summer,1,1,5243
+AC Executive Rooms,Weekday,New Year,1,0,8993
+AC Suite Room With Jacuzzi,Weekday,Festival,5,3,10758
+AC Cottage,Weekend,Summer,2,3,4379
+AC Executive Rooms,Weekday,Festival,1,2,7244
+AC Suite Room With Jacuzzi,Weekday,Monsoon,5,3,5763
+AC Suite Room With Jacuzzi,Weekday,Normal,5,0,6532
+AC Cottage,Weekend,Summer,2,3,4385
+AC Cottage,Weekday,Festival,2,2,5875
+AC Executive Rooms,Weekend,New Year,2,2,9196
+AC Deluxe Cottage,Weekday,Festival,2,1,7189
+AC Executive Rooms,Weekend,Monsoon,2,2,4196
+AC Deluxe Cottage,Weekday,Normal,1,3,4400
+AC Suite Room With Jacuzzi,Weekday,Summer,5,3,9304
+AC Executive Suite Room,Weekday,Summer,7,0,12823
+AC Cottage,Weekday,Festival,2,0,5065
+AC Executive Suite Room,Weekday,Monsoon,2,0,7741
+AC Deluxe Cottage,Weekend,New Year,2,0,9468
+AC Suite Room With Jacuzzi,Weekend,Festival,1,1,11741
+AC Executive Rooms,Weekend,Summer,1,1,5314
+AC Suite Room With Jacuzzi,Weekday,Monsoon,2,0,6499
+AC Suite Room With Jacuzzi,Weekday,Monsoon,4,2,6185
+AC Deluxe Cottage,Weekend,New Year,1,0,9254
+AC Cottage,Weekday,New Year,2,2,6855
+AC Executive Suite Room,Weekday,New Year,4,3,16904
+AC Deluxe Cottage,Weekday,Monsoon,1,3,4059
+AC Cottage,Weekday,New Year,2,2,7469
+AC Cottage,Weekend,New Year,2,3,7489
+AC Deluxe Cottage,Weekend,Summer,2,3,5348
+AC Deluxe Cottage,Weekday,Festival,1,2,7034
+AC Deluxe Cottage,Weekday,Summer,2,3,5489
+AC Executive Suite Room,Weekday,Monsoon,4,2,7095
+AC Deluxe Cottage,Weekend,Normal,1,3,4660
+AC Executive Suite Room,Weekday,New Year,5,1,16939
+AC Suite Room With Jacuzzi,Weekend,Summer,2,1,9393
+AC Executive Suite Room,Weekday,Summer,4,1,12856
+AC Executive Rooms,Weekend,Summer,1,0,5471
+AC Cottage,Weekend,New Year,1,0,7368
+AC Deluxe Cottage,Weekend,New Year,2,3,9419
+AC Executive Rooms,Weekend,Festival,1,2,7203
+AC Suite Room With Jacuzzi,Weekday,Normal,5,3,6489
+AC Executive Rooms,Weekday,New Year,2,3,9381
+AC Suite Room With Jacuzzi,Weekend,Normal,6,3,8323
+AC Cottage,Weekday,Summer,2,0,4366
+AC Executive Suite Room,Weekend,Summer,5,1,12275
+AC Deluxe Cottage,Weekend,Monsoon,1,3,4017
+AC Suite Room With Jacuzzi,Weekend,Monsoon,3,3,5786
+AC Deluxe Cottage,Weekday,New Year,1,1,9333
+AC Cottage,Weekend,Summer,2,3,4300
+AC Suite Room With Jacuzzi,Weekday,Festival,1,1,10863
+AC Deluxe Cottage,Weekday,New Year,2,3,8807
+AC Executive Suite Room,Weekday,Festival,2,1,13061
+AC Suite Room With Jacuzzi,Weekend,Festival,6,0,10921
+AC Executive Suite Room,Weekend,Monsoon,6,2,7352
+AC Cottage,Weekend,Normal,2,1,4795
+AC Executive Rooms,Weekday,Monsoon,2,2,4144
+AC Executive Rooms,Weekend,Festival,1,3,7314
+AC Executive Suite Room,Weekend,Summer,3,2,12431
+AC Executive Rooms,Weekend,Normal,1,1,4675
+AC Suite Room With Jacuzzi,Weekend,Monsoon,6,2,6227
+AC Executive Suite Room,Weekend,Monsoon,8,2,7765
+AC Executive Rooms,Weekend,Festival,1,1,7437
+AC Cottage,Weekday,Summer,2,0,4307
+AC Suite Room With Jacuzzi,Weekend,Normal,1,0,8959
+AC Deluxe Cottage,Weekday,Normal,2,0,4053
+AC Executive Suite Room,Weekday,Normal,7,2,7617
+AC Suite Room With Jacuzzi,Weekend,Festival,6,1,10268
+AC Executive Rooms,Weekday,Normal,1,2,4440
+AC Executive Suite Room,Weekend,Festival,5,3,13138
+AC Executive Rooms,Weekday,New Year,2,3,9036
+AC Executive Rooms,Weekend,Monsoon,2,1,4212
+AC Cottage,Weekend,Monsoon,2,3,3466
+AC Suite Room With Jacuzzi,Weekend,Normal,1,1,8352
+AC Executive Suite Room,Weekend,New Year,1,3,16939
+AC Deluxe Cottage,Weekend,Normal,2,2,4805
+AC Suite Room With Jacuzzi,Weekday,New Year,3,1,13843
+AC Executive Rooms,Weekend,Festival,1,1,7366
+AC Deluxe Cottage,Weekend,Summer,2,0,5216
+AC Suite Room With Jacuzzi,Weekend,Monsoon,6,2,5922
+AC Suite Room With Jacuzzi,Weekday,Summer,2,2,8613
+AC Deluxe Cottage,Weekend,Monsoon,2,1,3964
+AC Cottage,Weekday,Normal,1,1,3997
+AC Cottage,Weekend,Monsoon,1,3,3208
+AC Suite Room With Jacuzzi,Weekday,Summer,1,3,8722
+AC Executive Suite Room,Weekend,Monsoon,8,2,7474
+AC Cottage,Weekend,Normal,1,0,4636
+AC Deluxe Cottage,Weekday,New Year,2,1,8696
+AC Executive Suite Room,Weekend,Normal,2,1,11394
+AC Deluxe Cottage,Weekday,Normal,1,3,4376
+AC Cottage,Weekday,Festival,2,2,5958
+AC Executive Suite Room,Weekday,Normal,2,2,7746
+AC Executive Suite Room,Weekday,Monsoon,1,1,7996
+AC Cottage,Weekday,Festival,2,0,5171
+AC Executive Suite Room,Weekday,Festival,4,0,13992
+AC Cottage,Weekend,New Year,1,2,7289
+AC Cottage,Weekday,Summer,2,0,4551
+AC Executive Rooms,Weekend,Normal,1,2,4830
+AC Suite Room With Jacuzzi,Weekday,Summer,4,1,8824
+AC Executive Rooms,Weekend,Festival,1,0,7352
+AC Deluxe Cottage,Weekend,Summer,2,0,5248
+AC Deluxe Cottage,Weekend,New Year,2,1,9080
+AC Suite Room With Jacuzzi,Weekend,Monsoon,6,3,5781
+AC Executive Rooms,Weekday,Normal,1,3,4151
+AC Executive Suite Room,Weekend,Festival,1,3,13751
+AC Suite Room With Jacuzzi,Weekday,New Year,3,1,13656
+AC Cottage,Weekend,Summer,2,1,4513
+AC Executive Suite Room,Weekend,Festival,6,0,13098
+AC Executive Rooms,Weekday,Normal,1,1,4447
+AC Cottage,Weekday,Normal,2,1,3550
+AC Cottage,Weekend,Festival,2,0,5375
+AC Suite Room With Jacuzzi,Weekday,Normal,2,3,6950
+AC Cottage,Weekend,Normal,2,3,4920
+AC Executive Suite Room,Weekday,New Year,5,0,16503
+AC Cottage,Weekend,Normal,1,0,4551
+AC Suite Room With Jacuzzi,Weekend,Summer,2,1,9083
+AC Suite Room With Jacuzzi,Weekend,Normal,6,2,8690
+AC Deluxe Cottage,Weekend,Normal,1,1,4781
+AC Deluxe Cottage,Weekend,Summer,2,2,5462
+AC Executive Suite Room,Weekend,Monsoon,7,3,7845
+AC Executive Suite Room,Weekday,New Year,4,3,16568
+AC Executive Rooms,Weekend,Monsoon,2,3,4291
+AC Deluxe Cottage,Weekday,Normal,2,0,4265
+AC Suite Room With Jacuzzi,Weekend,Normal,3,1,8219
+AC Executive Suite Room,Weekday,Monsoon,3,0,7038
+AC Deluxe Cottage,Weekend,Summer,1,2,5187
+AC Executive Rooms,Weekday,Summer,2,2,5047
+AC Executive Rooms,Weekend,New Year,1,0,9240
+AC Executive Suite Room,Weekend,Summer,8,0,12609
+AC Executive Suite Room,Weekday,New Year,7,0,16597
+AC Cottage,Weekend,Monsoon,2,3,3323
+AC Suite Room With Jacuzzi,Weekday,Festival,1,2,11073
+AC Cottage,Weekend,New Year,1,2,7014
+AC Suite Room With Jacuzzi,Weekday,Normal,6,3,6994
+AC Deluxe Cottage,Weekday,Summer,2,2,5402
+AC Deluxe Cottage,Weekday,Summer,2,0,5243
+AC Executive Rooms,Weekday,New Year,2,2,8587
+AC Deluxe Cottage,Weekend,Summer,1,3,5286
+AC Suite Room With Jacuzzi,Weekend,Festival,6,1,11149
+AC Executive Rooms,Weekday,Summer,1,2,5397
+AC Deluxe Cottage,Weekend,New Year,1,0,9187
+AC Deluxe Cottage,Weekend,Monsoon,2,1,3964
+AC Executive Suite Room,Weekday,Monsoon,3,2,7631
+AC Deluxe Cottage,Weekday,Festival,1,1,7102
+AC Executive Suite Room,Weekday,Normal,2,0,7624
+AC Executive Rooms,Weekday,Monsoon,1,2,4155
+AC Cottage,Weekend,Festival,2,0,5339
+AC Suite Room With Jacuzzi,Weekday,Summer,5,2,9061
+AC Deluxe Cottage,Weekday,Normal,2,0,4130
+AC Suite Room With Jacuzzi,Weekday,Monsoon,2,2,5554
+AC Deluxe Cottage,Weekday,Normal,2,2,4339
+AC Executive Suite Room,Weekday,Normal,5,3,7618
+AC Deluxe Cottage,Weekday,Monsoon,2,0,3895
+AC Suite Room With Jacuzzi,Weekend,New Year,6,0,13081
+AC Suite Room With Jacuzzi,Weekend,Monsoon,4,3,6262
+AC Suite Room With Jacuzzi,Weekday,Monsoon,6,2,5863
+AC Executive Suite Room,Weekday,New Year,5,0,16281
+AC Executive Suite Room,Weekend,Normal,5,1,11155
+AC Executive Suite Room,Weekend,Summer,2,3,12533
+AC Executive Rooms,Weekday,Festival,1,1,7218
+AC Executive Suite Room,Weekend,Festival,3,1,13668
+AC Suite Room With Jacuzzi,Weekday,Summer,3,1,8940
+AC Suite Room With Jacuzzi,Weekday,Monsoon,1,0,5688
+AC Executive Suite Room,Weekday,Normal,6,3,7992
+AC Deluxe Cottage,Weekend,Festival,2,1,7398
+AC Suite Room With Jacuzzi,Weekday,Summer,2,0,9280
+AC Executive Rooms,Weekend,New Year,1,1,8736
+AC Cottage,Weekend,Normal,2,1,4757
+AC Executive Rooms,Weekend,Monsoon,1,3,4051
+AC Deluxe Cottage,Weekday,Summer,1,1,5016
+AC Deluxe Cottage,Weekday,Monsoon,2,1,4180
+AC Suite Room With Jacuzzi,Weekday,Normal,2,3,6887
+AC Executive Rooms,Weekend,Monsoon,2,1,4018
+AC Deluxe Cottage,Weekday,New Year,2,2,8903
+AC Executive Rooms,Weekday,New Year,1,3,8967
+AC Cottage,Weekday,New Year,2,0,7071
+AC Deluxe Cottage,Weekday,Summer,2,3,5203
+AC Executive Suite Room,Weekend,Festival,3,3,13301
+AC Executive Rooms,Weekday,New Year,1,3,9349
+AC Deluxe Cottage,Weekday,New Year,1,1,9297
+AC Executive Rooms,Weekday,Festival,2,2,7230
+AC Cottage,Weekday,Festival,1,3,5092
+AC Executive Suite Room,Weekend,Summer,2,0,12116
+AC Deluxe Cottage,Weekend,Normal,2,1,4693
+AC Executive Rooms,Weekend,Normal,1,2,4789
+AC Suite Room With Jacuzzi,Weekday,Summer,2,0,8929
+AC Executive Suite Room,Weekend,Festival,5,1,13120
+AC Suite Room With Jacuzzi,Weekday,Normal,5,2,6012
+AC Deluxe Cottage,Weekend,Festival,1,3,7121
+AC Suite Room With Jacuzzi,Weekend,Festival,4,3,10162
+AC Executive Rooms,Weekday,Summer,2,1,5025
+AC Suite Room With Jacuzzi,Weekday,Normal,6,2,6037
+AC Suite Room With Jacuzzi,Weekday,New Year,5,2,13678
+AC Cottage,Weekday,Normal,2,1,3582
+AC Executive Suite Room,Weekday,Festival,6,0,13095
+AC Executive Suite Room,Weekend,Monsoon,7,0,7776
+AC Deluxe Cottage,Weekday,Monsoon,2,1,3862
+AC Executive Suite Room,Weekend,New Year,7,1,16425
+AC Suite Room With Jacuzzi,Weekday,Normal,5,0,6495
+AC Executive Rooms,Weekend,Festival,2,2,7269
+AC Executive Rooms,Weekend,Summer,2,3,5252
+AC Suite Room With Jacuzzi,Weekday,Monsoon,2,0,5621
+AC Cottage,Weekend,Normal,1,3,4711
+AC Cottage,Weekend,Monsoon,1,0,3406
+AC Executive Suite Room,Weekend,Normal,5,2,11518
+AC Executive Rooms,Weekend,Normal,1,2,4674
+AC Deluxe Cottage,Weekday,Summer,1,2,5426
+AC Executive Suite Room,Weekend,Festival,1,1,13493
+AC Suite Room With Jacuzzi,Weekend,New Year,3,3,14605
+AC Deluxe Cottage,Weekday,New Year,2,2,9068
+AC Executive Rooms,Weekday,Summer,2,2,5033
+AC Suite Room With Jacuzzi,Weekend,Normal,3,3,8641
+AC Executive Rooms,Weekday,New Year,2,1,9109
+AC Cottage,Weekend,Monsoon,1,2,3623
+AC Cottage,Weekend,Summer,2,3,4624
+AC Executive Suite Room,Weekday,New Year,5,1,15229
+AC Executive Suite Room,Weekday,Summer,2,3,12518
+AC Cottage,Weekend,New Year,1,1,6848

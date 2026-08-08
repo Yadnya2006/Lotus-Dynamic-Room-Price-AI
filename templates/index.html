@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lotus Holiday Resort | AI Dynamic Room Price Recommendation</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+
+        🌿 Lotus Holiday Resort
+
+    </div>
+
+    <div class="nav-links">
+
+        <a href="#">Home</a>
+
+        <a href="#prediction">AI Prediction</a>
+
+        <a href="#report">AI Report</a>
+
+        <a href="#footer">Contact</a>
+
+    </div>
+
+</nav>
+
+<section class="hero">
+
+    <div class="hero-overlay">
+
+        <h1>Lotus Holiday Resort</h1>
+
+        <p>AI Dynamic Room Price Recommendation System</p>
+
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div class="stat-card">
+
+        <h2>22</h2>
+
+        <p>Total Rooms</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>5</h2>
+
+        <p>Room Types</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>24×7</h2>
+
+        <p>Reception</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>AI</h2>
+
+        <p>Smart Pricing</p>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>About Resort</h2>
+
+        <p>📍 Diveagar, Shrivardhan, Raigad, Maharashtra</p>
+
+        <p>📞 +91 8975409789</p>
+
+        <p>🏖 3 Minutes Walk from Beach</p>
+
+        <p>🏊 Swimming Pool</p>
+
+        <p>🌳 Garden</p>
+
+        <p>🧒 Kids Play Area</p>
+
+        <p>📶 Free WiFi</p>
+
+        <p>🚗 Free Parking</p>
+
+        <p>🍽 Multi Cuisine Restaurant</p>
+
+    </div>
+
+    <div class="card" id="prediction">
+
+        <h2>AI Price Prediction</h2>
+
+        <form id="predictionForm">
+
+            <label>Room Type</label>
+
+            <select id="room_type">
+
+                {% for room in room_types %}
+
+                <option value="{{ room }}">
+
+                    {{ room }}
+
+                </option>
+
+                {% endfor %}
+
+            </select>
+
+            <label>Day Type</label>
+
+            <select id="day_type">
+
+                {% for day in day_types %}
+
+                <option value="{{ day }}">
+
+                    {{ day }}
+
+                </option>
+
+                {% endfor %}
+
+            </select>
+
+            <label>Season</label>
+
+            <select id="season">
+
+                {% for season in seasons %}
+
+                <option value="{{ season }}">
+
+                    {{ season }}
+
+                </option>
+
+                {% endfor %}
+
+            </select>
+
+            <label>Guests</label>
+
+            <input
+                type="number"
+                id="guests"
+                value="2"
+                min="1"
+            >
+
+            <label>Extra Guests</label>
+
+            <input
+                type="number"
+                id="extra_guests"
+                value="0"
+                min="0"
+            >
+
+            <button type="submit">
+
+                🤖 Generate AI Recommendation
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="card result-card">
+
+        <h2>AI Recommendation</h2>
+
+        <div id="result">
+
+            <h1>₹ --</h1>
+
+            <p>
+
+                Fill the details and click
+
+                <strong>Generate AI Recommendation</strong>
+
+            </p>
+
+        </div>
+
+        <div class="analytics">
+
+            <div class="analytics-box">
+
+                <h3>Demand</h3>
+
+                <span id="demand">--</span>
+
+            </div>
+
+            <div class="analytics-box">
+
+                <h3>Occupancy</h3>
+
+                <span id="occupancy">--</span>
+
+            </div>
+
+            <div class="analytics-box">
+
+                <h3>Trend</h3>
+
+                <span id="trend">--</span>
+
+            </div>
+
+            <div class="analytics-box">
+
+                <h3>Confidence</h3>
+
+                <span id="confidence">96%</span>
+
+            </div>
+
+        </div>
+                <div class="summary-card">
+
+            <h2>Booking Summary</h2>
+
+            <div id="summary">
+
+                Booking summary will appear here after prediction.
+
+            </div>
+
+        </div>
+
+        <div class="ai-card">
+
+            <h2>AI Recommendation</h2>
+
+            <div id="recommendation">
+
+                AI recommendation will appear here.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<section id="report" class="graph-section">
+
+    <div class="card">
+
+        <h2>📊 AI Generated Analytics Report</h2>
+
+        <p class="text-center">
+
+            These graphs are generated automatically by Python after every prediction.
+
+        </p>
+
+        <div class="graph-grid">
+
+            <div class="graph-card">
+
+                <h3>AI Price Analysis</h3>
+
+                <img
+
+                    id="priceGraph"
+
+                    src=""
+
+                    alt="Price Analysis Graph"
+
+                >
+
+            </div>
+
+            <div class="graph-card">
+
+                <h3>Guest Distribution</h3>
+
+                <img
+
+                    id="guestGraph"
+
+                    src=""
+
+                    alt="Guest Distribution Graph"
+
+                >
+
+            </div>
+
+            <div class="graph-card">
+
+                <h3>Expected Occupancy</h3>
+
+                <img
+
+                    id="occupancyGraph"
+
+                    src=""
+
+                    alt="Occupancy Graph"
+
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="card">
+
+    <h2>Room Information</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Room Type</th>
+
+                <th>Capacity</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>AC Cottage</td>
+
+                <td>2 Guests</td>
+
+            </tr>
+
+            <tr>
+
+                <td>AC Deluxe Cottage</td>
+
+                <td>2 Guests</td>
+
+            </tr>
+
+            <tr>
+
+                <td>AC Executive Room</td>
+
+                <td>2 Guests</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Suite With Jacuzzi</td>
+
+                <td>6 Guests</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Executive Suite</td>
+
+                <td>8 Guests</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<footer id="footer">
+
+    <h3>Lotus Holiday Resort</h3>
+
+    <p>
+
+        AI Dynamic Room Price Recommendation System
+
+    </p>
+
+    <p>
+
+        Developed by
+
+        <strong>Yadnya Pingale</strong>
+
+    </p>
+
+    <p>
+
+        MIT Art, Design & Technology University
+
+    </p>
+
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

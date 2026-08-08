@@ -1,0 +1,918 @@
+/* ==========================================
+   Lotus Holiday Resort
+   AI Dynamic Room Price Recommendation System
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+:root{
+
+    --primary:#166534;
+    --secondary:#22c55e;
+    --gold:#d4af37;
+    --light:#f8fafc;
+    --white:#ffffff;
+    --text:#1f2937;
+    --gray:#6b7280;
+    --border:#e5e7eb;
+    --shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+body{
+
+    background:#edf6ef;
+
+    color:var(--text);
+
+    line-height:1.6;
+
+}
+
+/* ==========================
+        NAVBAR
+========================== */
+
+nav{
+
+    background:linear-gradient(90deg,#14532d,#166534);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 60px;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    box-shadow:var(--shadow);
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.nav-links a:hover{
+
+    color:#FFD54F;
+
+}
+
+/* ==========================
+          HERO
+========================== */
+
+.hero{
+
+    height:360px;
+
+    background:
+
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-overlay{
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.hero-overlay h1{
+
+    font-size:56px;
+
+    margin-bottom:15px;
+
+}
+
+.hero-overlay p{
+
+    font-size:20px;
+
+}
+
+/* ==========================
+        STATISTICS
+========================== */
+
+.stats{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.stat-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stat-card h2{
+
+    color:var(--primary);
+
+    font-size:38px;
+
+}
+
+.stat-card p{
+
+    color:#555;
+
+    margin-top:10px;
+
+}
+
+/* ==========================
+        CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+/* ==========================
+          CARD
+========================== */
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.card h2{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+/* ==========================
+        ABOUT RESORT
+========================== */
+
+.card p{
+
+    margin-bottom:12px;
+
+}
+
+.card a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+           FORM
+========================== */
+
+form{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+form label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    display:block;
+
+}
+
+form select,
+form input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+form select:focus,
+form input:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(22,101,52,.15);
+
+}
+
+/* Button */
+
+button{
+
+    grid-column:1/3;
+
+    margin-top:15px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(90deg,#166534,#22c55e);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+}
+
+/* ==========================
+      RESULT SECTION
+========================== */
+
+.result-card{
+
+    display:none;
+
+    animation:fadeUp .6s ease;
+
+}
+
+#result{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+#result h1{
+
+    font-size:64px;
+
+    color:var(--primary);
+
+}
+
+#result p{
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+/* ==========================
+      ANALYTICS BOXES
+========================== */
+
+.analytics{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+.analytics-box{
+
+    background:#f8fff8;
+
+    border-radius:16px;
+
+    padding:22px;
+
+    text-align:center;
+
+    border-top:5px solid var(--gold);
+
+    transition:.3s;
+
+}
+
+.analytics-box:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.analytics-box h3{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.analytics-box span{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:#14532d;
+
+}
+/* ==========================
+      BOOKING SUMMARY
+========================== */
+
+.summary-card{
+
+    margin-top:30px;
+
+    background:#f8fafc;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    border-left:6px solid var(--gold);
+
+}
+
+.summary-card h2{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.summary-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.summary-table td{
+
+    padding:12px 10px;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+.summary-table td:first-child{
+
+    font-weight:600;
+
+    color:#555;
+
+    width:45%;
+
+}
+
+.summary-table td:last-child{
+
+    text-align:right;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+/* ==========================
+      AI RECOMMENDATION
+========================== */
+
+.ai-card{
+
+    margin-top:30px;
+
+    background:#fffdf4;
+
+    border-left:6px solid var(--gold);
+
+    border-radius:18px;
+
+    padding:25px;
+
+}
+
+.ai-card h2{
+
+    color:#8c6b00;
+
+    margin-bottom:18px;
+
+}
+
+#recommendation{
+
+    line-height:1.9;
+
+    color:#444;
+
+    font-size:16px;
+
+}
+
+/* ==========================
+      GRAPH SECTION
+========================== */
+
+.graph-section{
+
+    margin-top:40px;
+
+}
+
+.graph-section .card{
+
+    padding:35px;
+
+}
+
+.graph-section p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+.graph-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+
+}
+
+.graph-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.graph-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.graph-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.graph-card img{
+
+    width:100%;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+}
+
+/* ==========================
+        ROOM TABLE
+========================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:15px;
+
+}
+
+thead{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+th{
+
+    padding:16px;
+
+    text-align:center;
+
+}
+
+td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+tbody tr:hover{
+
+    background:#f4fbf5;
+
+}
+
+/* ==========================
+          FOOTER
+========================== */
+
+footer{
+
+    margin-top:60px;
+
+    background:#14532d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+footer h3{
+
+    margin-bottom:12px;
+
+    font-size:26px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+footer strong{
+
+    color:#FFD54F;
+
+}
+
+/* ==========================
+        ANIMATIONS
+========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.card{
+
+    animation:fadeUp .7s ease;
+
+}
+
+/* ==========================
+      SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#edf6ef;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#1c7a46;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#14532d;
+
+}
+
+/* ==========================
+      RESPONSIVE
+========================== */
+
+@media(max-width:1000px){
+
+    .stats{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    form{
+
+        grid-template-columns:1fr;
+
+    }
+
+    button{
+
+        grid-column:1;
+
+    }
+
+    .analytics{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        padding:20px;
+
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+    .hero{
+
+        height:260px;
+
+    }
+
+    .hero-overlay h1{
+
+        font-size:34px;
+
+    }
+
+    .hero-overlay p{
+
+        font-size:16px;
+
+    }
+
+    .stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .analytics{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .graph-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #result h1{
+
+        font-size:46px;
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    .container{
+
+        width:95%;
+
+    }
+
+    .card{
+
+        padding:20px;
+
+    }
+
+    .logo{
+
+        font-size:22px;
+
+    }
+
+}
+
+/* ==========================
+      UTILITY CLASSES
+========================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-20{
+
+    margin-top:20px;
+
+}
+
+.mt-30{
+
+    margin-top:30px;
+
+}
+
+.mb-20{
+
+    margin-bottom:20px;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+.show{
+
+    display:block;
+
+}
