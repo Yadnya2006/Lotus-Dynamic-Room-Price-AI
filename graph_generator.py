@@ -1,196 +1,282 @@
+# Graph Generator
+
 import os
+
 import matplotlib
 matplotlib.use("Agg")
 
 import matplotlib.pyplot as plt
+import pandas as pd
 
 
-GRAPH_FOLDER = "static/graphs"
+# Graph folder
 
-os.makedirs(GRAPH_FOLDER, exist_ok=True)
+GRAPH_FOLDER = os.path.join(
+    "static",
+    "graphs"
+)
+
+os.makedirs(
+    GRAPH_FOLDER,
+    exist_ok=True
+)
 
 
-def generate_price_graph(base_price, extra_charge, final_price):
+# Generate graphs
 
-    plt.figure(figsize=(8, 5))
+def generate_graphs():
 
-    labels = [
-        "Base Price",
-        "Extra Charge",
-        "Final Price"
-    ]
+    try:
 
-    values = [
-        base_price,
-        extra_charge,
-        final_price
-    ]
-
-    colors = [
-        "#3498db",
-        "#f39c12",
-        "#27ae60"
-    ]
-
-    bars = plt.bar(labels, values, color=colors)
-
-    plt.title(
-        "AI Dynamic Price Recommendation",
-        fontsize=16,
-        fontweight="bold"
-    )
-
-    plt.ylabel("Price (₹)")
-
-    plt.grid(
-        axis="y",
-        linestyle="--",
-        alpha=0.4
-    )
-
-    for bar in bars:
-
-        height = bar.get_height()
-
-        plt.text(
-            bar.get_x() + bar.get_width()/2,
-            height + 100,
-            f"₹{int(height)}",
-            ha="center",
-            fontsize=11,
-            fontweight="bold"
+        df = pd.read_csv(
+            "dataset.csv"
         )
 
-    graph_path = os.path.join(
-        GRAPH_FOLDER,
-        "price_graph.png"
-    )
+        # Price Graph
 
-    plt.tight_layout()
+        plt.figure(figsize=(8, 5))
 
-    plt.savefig(
-        graph_path,
-        dpi=180
-    )
+        price_data = (
+            df.groupby("Room_Type")["Base_Price"]
+            .mean()
+            .sort_values()
+        )
 
-    plt.close()
+        price_data.plot(
+            kind="bar"
+        )
 
-    return graph_path
+        plt.title(
+            "Average Room Price"
+        )
 
+        plt.xlabel(
+            "Room Type"
+        )
 
-def generate_guest_graph(guests, extra_guests):
+        plt.ylabel(
+            "Average Price"
+        )
 
-    plt.figure(figsize=(5, 5))
+        plt.xticks(
+            rotation=25,
+            ha="right"
+        )
 
-    labels = [
-        "Guests",
-        "Extra Guests"
-    ]
+        plt.tight_layout()
 
-    values = [
-        guests,
-        extra_guests
-    ]
+        plt.savefig(
+            os.path.join(
+                GRAPH_FOLDER,
+                "price_graph.png"
+            )
+        )
 
-    colors = [
-        "#3498db",
-        "#e74c3c"
-    ]
-
-    plt.pie(
-        values,
-        labels=labels,
-        autopct="%1.1f%%",
-        colors=colors,
-        startangle=90
-    )
-
-    plt.title(
-        "Guest Distribution",
-        fontsize=15,
-        fontweight="bold"
-    )
-
-    graph_path = os.path.join(
-        GRAPH_FOLDER,
-        "guest_graph.png"
-    )
-
-    plt.savefig(
-        graph_path,
-        dpi=180
-    )
-
-    plt.close()
-
-    return graph_path
+        plt.close()
 
 
-def generate_occupancy_graph():
+        # Guest Graph
 
-    plt.figure(figsize=(5, 5))
+        plt.figure(figsize=(8, 5))
 
-    labels = [
-        "Occupied",
-        "Available"
-    ]
+        df["Guests"].value_counts().sort_index().plot(
+            kind="bar"
+        )
 
-    values = [
-        95,
-        5
-    ]
+        plt.title(
+            "Guest Distribution"
+        )
 
-    colors = [
-        "#2ecc71",
-        "#ecf0f1"
-    ]
+        plt.xlabel(
+            "Number of Guests"
+        )
 
-    plt.pie(
-        values,
-        labels=labels,
-        autopct="%1.0f%%",
-        colors=colors,
-        startangle=90
-    )
+        plt.ylabel(
+            "Number of Bookings"
+        )
 
-    plt.title(
-        "Expected Occupancy",
-        fontsize=15,
-        fontweight="bold"
-    )
+        plt.tight_layout()
 
-    graph_path = os.path.join(
-        GRAPH_FOLDER,
-        "occupancy_graph.png"
-    )
+        plt.savefig(
+            os.path.join(
+                GRAPH_FOLDER,
+                "guest_graph.png"
+            )
+        )
 
-    plt.savefig(
-        graph_path,
-        dpi=180
-    )
-
-    plt.close()
-
-    return graph_path
+        plt.close()
 
 
-def generate_all_graphs(
-    base_price,
-    extra_charge,
-    final_price,
-    guests,
-    extra_guests
-):
+        # Occupancy Graph
 
-    generate_price_graph(
-        base_price,
-        extra_charge,
-        final_price
-    )
+        plt.figure(figsize=(8, 5))
 
-    generate_guest_graph(
-        guests,
-        extra_guests
-    )
+        occupancy = (
+            df.groupby("Room_Type")["Guests"]
+            .mean()
+        )
 
-    generate_occupancy_graph()
+        occupancy.plot(
+            kind="bar"
+        )
+
+        plt.title(
+            "Average Guests by Room"
+        )
+
+        plt.xlabel(
+            "Room Type"
+        )
+
+        plt.ylabel(
+            "Average Guests"
+        )
+
+        plt.xticks(
+            rotation=25,
+            ha="right"
+        )
+
+        plt.tight_layout()
+
+        plt.savefig(
+            os.path.join(
+                GRAPH_FOLDER,
+                "occupancy_graph.png"
+            )
+        )
+
+        plt.close()
+
+
+        # Extra Guest Graph
+
+        plt.figure(figsize=(8, 5))
+
+        df["Extra_Guests"].value_counts().sort_index().plot(
+            kind="bar"
+        )
+
+        plt.title(
+            "Extra Guest Distribution"
+        )
+
+        plt.xlabel(
+            "Extra Guests"
+        )
+
+        plt.ylabel(
+            "Bookings"
+        )
+
+        plt.tight_layout()
+
+        plt.savefig(
+            os.path.join(
+                GRAPH_FOLDER,
+                "extra_guest_graph.png"
+            )
+        )
+
+        plt.close()
+
+
+        # Day Price Graph
+
+        plt.figure(figsize=(7, 5))
+
+        day_price = (
+            df.groupby("Day_Type")["Base_Price"]
+            .mean()
+        )
+
+        day_price.plot(
+            kind="bar"
+        )
+
+        plt.title(
+            "Average Price by Day Type"
+        )
+
+        plt.xlabel(
+            "Day Type"
+        )
+
+        plt.ylabel(
+            "Average Price"
+        )
+
+        plt.tight_layout()
+
+        plt.savefig(
+            os.path.join(
+                GRAPH_FOLDER,
+                "day_price_graph.png"
+            )
+        )
+
+        plt.close()
+
+
+        # Season Graph
+
+        plt.figure(figsize=(8, 5))
+
+        season_price = (
+            df.groupby("Season")["Base_Price"]
+            .mean()
+        )
+
+        season_price.plot(
+            kind="bar"
+        )
+
+        plt.title(
+            "Average Price by Season"
+        )
+
+        plt.xlabel(
+            "Season"
+        )
+
+        plt.ylabel(
+            "Average Price"
+        )
+
+        plt.tight_layout()
+
+        plt.savefig(
+            os.path.join(
+                GRAPH_FOLDER,
+                "season_graph.png"
+            )
+        )
+
+        plt.close()
+
+
+        print(
+            "Graphs generated successfully."
+        )
+
+        print(
+            "Graph directory:",
+            os.path.abspath(
+                GRAPH_FOLDER
+            )
+        )
+
+
+    except Exception as error:
+
+        print(
+            "Graph Error:",
+            error
+        )
+
+
+# Run directly
+
+if __name__ == "__main__":
+
+    generate_graphs()

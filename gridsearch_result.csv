@@ -1,0 +1,2 @@
+Model,MAE,RMSE,R2
+Random Forest GridSearchCV,236.702,303.1662,0.9936

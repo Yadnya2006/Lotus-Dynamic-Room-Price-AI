@@ -1,178 +1,609 @@
-document.addEventListener("DOMContentLoaded", () => {
+// Lotus Holiday Resort - JavaScript
 
-    const form = document.getElementById("predictionForm");
 
-    form.addEventListener("submit", async function (e) {
+// Format Price
 
-        e.preventDefault();
+function formatPrice(value) {
 
-        const room_type = document.getElementById("room_type").value;
-        const day_type = document.getElementById("day_type").value;
-        const season = document.getElementById("season").value;
-        const guests = parseInt(document.getElementById("guests").value);
-        const extra_guests = parseInt(document.getElementById("extra_guests").value);
+    return "₹" + Number(value).toLocaleString("en-IN");
+
+}
+
+
+// Prediction Form
+
+const predictionForm = document.getElementById(
+    "predictionForm"
+);
+
+const predictButton = document.getElementById(
+    "predictButton"
+);
+
+const formError = document.getElementById(
+    "formError"
+);
+
+
+predictionForm.addEventListener(
+    "submit",
+    async function (event) {
+
+        event.preventDefault();
+
+
+        // Clear Error
+
+        formError.textContent = "";
+
+
+        // Get Values
+
+        const roomType = document.getElementById(
+            "roomType"
+        ).value;
+
+        const dayType = document.getElementById(
+            "dayType"
+        ).value;
+
+        const season = document.getElementById(
+            "season"
+        ).value;
+
+        const guests = document.getElementById(
+            "guests"
+        ).value;
+
+        const extraGuests = document.getElementById(
+            "extraGuests"
+        ).value;
+
+
+        // Basic Validation
+
+        if (
+            roomType === "" ||
+            dayType === "" ||
+            season === ""
+        ) {
+
+            formError.textContent =
+                "Please select room type, day type and season.";
+
+            return;
+
+        }
+
+
+        // Button Loading
+
+        predictButton.disabled = true;
+
+        predictButton.innerHTML =
+            "⏳ Calculating Price...";
+
 
         try {
 
-            const response = await fetch("/predict", {
 
-                method: "POST",
+            // Send Data to Flask
 
-                headers: {
+            const response = await fetch(
+                "/predict",
+                {
+                    method: "POST",
 
-                    "Content-Type": "application/json"
+                    headers: {
+                        "Content-Type":
+                            "application/json"
+                    },
 
-                },
+                    body: JSON.stringify({
 
-                body: JSON.stringify({
+                        Room_Type: roomType,
 
-                    room_type,
-                    day_type,
-                    season,
-                    guests,
-                    extra_guests
+                        Day_Type: dayType,
 
-                })
+                        Season: season,
 
-            });
+                        Guests: Number(
+                            guests
+                        ),
 
-            const data = await response.json();
+                        Extra_Guests: Number(
+                            extraGuests
+                        )
 
-            if (!response.ok) {
+                    })
+                }
+            );
 
-                alert(data.error);
 
-                return;
+            // Read Response
+
+            const result =
+                await response.json();
+
+
+            // Check Error
+
+            if (
+                !response.ok ||
+                !result.success
+            ) {
+
+                throw new Error(
+                    result.error ||
+                    "Unable to calculate price."
+                );
 
             }
 
-            document.querySelector(".result-card").style.display = "block";
 
-            document.getElementById("result").innerHTML = `
+            // Show Base Price
 
-                <h1>₹ ${data.final_price}</h1>
+            document.getElementById(
+                "basePrice"
+            ).textContent =
+                Number(
+                    result.base_price
+                ).toLocaleString("en-IN");
 
-                <p>AI Recommended Price</p>
 
-            `;
+            document.getElementById(
+                "basePriceDetail"
+            ).textContent =
+                formatPrice(
+                    result.base_price
+                );
 
-            document.getElementById("demand").textContent = data.demand;
 
-            document.getElementById("occupancy").textContent = data.occupancy + "%";
+            // Show Extra Guest Charge
 
-            document.getElementById("trend").textContent = data.trend;
+            document.getElementById(
+                "extraGuestCharge"
+            ).textContent =
+                formatPrice(
+                    result.extra_guest_charge
+                );
 
-            document.getElementById("confidence").textContent = data.confidence + "%";
 
-            document.getElementById("summary").innerHTML = `
+            // Show Total Price
 
-                <table class="summary-table">
+            document.getElementById(
+                "totalPrice"
+            ).textContent =
+                formatPrice(
+                    result.total_price
+                );
 
-                    <tr>
 
-                        <td>Room Type</td>
+            // Show Room
 
-                        <td>${room_type}</td>
+            document.getElementById(
+                "resultRoom"
+            ).textContent =
+                result.room_type;
 
-                    </tr>
 
-                    <tr>
+            // Show Day
 
-                        <td>Day Type</td>
+            document.getElementById(
+                "resultDay"
+            ).textContent =
+                result.day_type;
 
-                        <td>${day_type}</td>
 
-                    </tr>
+            // Show Season
 
-                    <tr>
+            document.getElementById(
+                "resultSeason"
+            ).textContent =
+                result.season;
 
-                        <td>Season</td>
 
-                        <td>${season}</td>
+            // Show Guests
 
-                    </tr>
+            document.getElementById(
+                "resultGuests"
+            ).textContent =
+                result.guests +
+                " Guest(s)";
 
-                    <tr>
 
-                        <td>Guests</td>
+            // Show Success Message
 
-                        <td>${guests}</td>
+            document.getElementById(
+                "resultMessage"
+            ).textContent =
+                "✨ Price calculated successfully for your selected stay.";
 
-                    </tr>
-
-                    <tr>
-
-                        <td>Extra Guests</td>
-
-                        <td>${extra_guests}</td>
-
-                    </tr>
-
-                    <tr>
-
-                        <td>Base Price</td>
-
-                        <td>₹${data.base_price}</td>
-
-                    </tr>
-
-                    <tr>
-
-                        <td>Extra Charge</td>
-
-                        <td>₹${data.extra_charge}</td>
-
-                    </tr>
-
-                    <tr>
-
-                        <td><strong>Final Price</strong></td>
-
-                        <td><strong>₹${data.final_price}</strong></td>
-
-                    </tr>
-
-                </table>
-
-            `;
-
-            document.getElementById("recommendation").innerHTML = `
-
-                <p>${data.recommendation}</p>
-
-            `;
-
-            // Refresh generated graphs
-
-            const timestamp = new Date().getTime();
-
-            document.getElementById("priceGraph").src =
-                data.price_graph + "?t=" + timestamp;
-
-            document.getElementById("guestGraph").src =
-                data.guest_graph + "?t=" + timestamp;
-
-            document.getElementById("occupancyGraph").src =
-                data.occupancy_graph + "?t=" + timestamp;
-
-            document.querySelector(".graph-section").style.display = "block";
-
-            document.querySelector(".result-card").scrollIntoView({
-
-                behavior: "smooth"
-
-            });
 
         }
 
         catch (error) {
 
-            console.error(error);
+            console.error(
+                "Prediction Error:",
+                error
+            );
 
-            alert("Server Error");
+            formError.textContent =
+                error.message ||
+                "Something went wrong.";
 
         }
 
-    });
 
-});
+        finally {
+
+            // Restore Button
+
+            predictButton.disabled = false;
+
+            predictButton.innerHTML =
+                "<span>✨</span> Predict Room Price";
+
+        }
+
+    }
+);
+
+
+// Load ML Summary
+
+async function loadMLSummary() {
+
+    try {
+
+        const response =
+            await fetch(
+                "/ml-summary"
+            );
+
+        const data =
+            await response.json();
+
+
+        if (!data.success) {
+
+            throw new Error(
+                data.error
+            );
+
+        }
+
+
+        // Model Comparison
+
+        const comparison =
+            document.getElementById(
+                "modelComparison"
+            );
+
+
+        let comparisonHTML =
+            "<table>";
+
+        comparisonHTML +=
+            "<thead>";
+
+        comparisonHTML +=
+            "<tr>";
+
+        comparisonHTML +=
+            "<th>Model</th>";
+
+        comparisonHTML +=
+            "<th>MAE</th>";
+
+        comparisonHTML +=
+            "<th>RMSE</th>";
+
+        comparisonHTML +=
+            "<th>R² Score</th>";
+
+        comparisonHTML +=
+            "</tr>";
+
+        comparisonHTML +=
+            "</thead>";
+
+        comparisonHTML +=
+            "<tbody>";
+
+
+        data.comparison.forEach(
+            function (row) {
+
+                comparisonHTML +=
+                    "<tr>";
+
+                comparisonHTML +=
+                    "<td>" +
+                    row.Model +
+                    "</td>";
+
+                comparisonHTML +=
+                    "<td>" +
+                    row.MAE +
+                    "</td>";
+
+                comparisonHTML +=
+                    "<td>" +
+                    row.RMSE +
+                    "</td>";
+
+                comparisonHTML +=
+                    "<td>" +
+                    row.R2 +
+                    "</td>";
+
+                comparisonHTML +=
+                    "</tr>";
+
+            }
+        );
+
+
+        comparisonHTML +=
+            "</tbody>";
+
+        comparisonHTML +=
+            "</table>";
+
+
+        comparison.innerHTML =
+            comparisonHTML;
+
+
+        // Cross Validation
+
+        const crossValidation =
+            document.getElementById(
+                "crossValidation"
+            );
+
+
+        let cvHTML =
+            "<table>";
+
+        cvHTML +=
+            "<thead>";
+
+        cvHTML +=
+            "<tr>";
+
+        cvHTML +=
+            "<th>Model</th>";
+
+        cvHTML +=
+            "<th>Mean R²</th>";
+
+        cvHTML +=
+            "<th>Standard Deviation</th>";
+
+        cvHTML +=
+            "</tr>";
+
+        cvHTML +=
+            "</thead>";
+
+        cvHTML +=
+            "<tbody>";
+
+
+        data.cross_validation.forEach(
+            function (row) {
+
+                cvHTML +=
+                    "<tr>";
+
+                cvHTML +=
+                    "<td>" +
+                    row.Model +
+                    "</td>";
+
+                cvHTML +=
+                    "<td>" +
+                    row.Mean_R2 +
+                    "</td>";
+
+                cvHTML +=
+                    "<td>" +
+                    row.Standard_Deviation +
+                    "</td>";
+
+                cvHTML +=
+                    "</tr>";
+
+            }
+        );
+
+
+        cvHTML +=
+            "</tbody>";
+
+        cvHTML +=
+            "</table>";
+
+
+        crossValidation.innerHTML =
+            cvHTML;
+
+
+        // GridSearchCV
+
+        const gridSearch =
+            document.getElementById(
+                "gridSearch"
+            );
+
+
+        if (
+            data.gridsearch &&
+            data.gridsearch.length > 0
+        ) {
+
+            const row =
+                data.gridsearch[0];
+
+
+            gridSearch.innerHTML =
+
+                "<strong>Random Forest GridSearchCV</strong>" +
+
+                "<br><br>" +
+
+                "MAE: " +
+                row.MAE +
+
+                "<br>" +
+
+                "RMSE: " +
+                row.RMSE +
+
+                "<br>" +
+
+                "R² Score: " +
+                row.R2;
+
+        }
+
+        else {
+
+            gridSearch.textContent =
+                "GridSearchCV results not available.";
+
+        }
+
+
+        // EDA Summary
+
+        const edaSummary =
+            document.getElementById(
+                "edaSummary"
+            );
+
+
+        let edaHTML = "";
+
+
+        data.eda.forEach(
+            function (row) {
+
+                edaHTML +=
+
+                    '<div class="eda-item">' +
+
+                    "<span>" +
+                    row.Metric +
+                    "</span>" +
+
+                    "<strong>" +
+                    row.Value +
+                    "</strong>" +
+
+                    "</div>";
+
+            }
+        );
+
+
+        edaSummary.innerHTML =
+            edaHTML;
+
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "ML Summary Error:",
+            error
+        );
+
+
+        document.getElementById(
+            "modelComparison"
+        ).textContent =
+            "Unable to load model results.";
+
+
+        document.getElementById(
+            "crossValidation"
+        ).textContent =
+            "Unable to load validation results.";
+
+
+        document.getElementById(
+            "gridSearch"
+        ).textContent =
+            "Unable to load GridSearchCV results.";
+
+
+        document.getElementById(
+            "edaSummary"
+        ).textContent =
+            "Unable to load dataset summary.";
+
+    }
+
+}
+
+
+// Load Dataset Information
+
+async function loadDatasetInfo() {
+
+    try {
+
+        const response =
+            await fetch(
+                "/dataset-info"
+            );
+
+        const data =
+            await response.json();
+
+
+        if (!data.success) {
+
+            return;
+
+        }
+
+
+        console.log(
+            "Dataset Information:",
+            data
+        );
+
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "Dataset Error:",
+            error
+        );
+
+    }
+
+}
+
+
+// Start Page
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        loadMLSummary();
+
+        loadDatasetInfo();
+
+    }
+);

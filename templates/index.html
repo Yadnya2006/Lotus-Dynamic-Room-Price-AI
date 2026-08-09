@@ -5,442 +5,1080 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>Lotus Holiday Resort | AI Dynamic Room Price Recommendation</title>
+    <title>
+        Lotus Holiday Resort | AI Room Pricing
+    </title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
 
 </head>
 
+
 <body>
 
-<nav>
+    <!-- Navigation -->
 
-    <div class="logo">
+    <header class="navbar">
 
-        🌿 Lotus Holiday Resort
+        <div class="brand">
 
-    </div>
+            <div class="brand-icon">
+                🌿
+            </div>
 
-    <div class="nav-links">
+            <div>
 
-        <a href="#">Home</a>
+                <h2>
+                    Lotus Holiday Resort
+                </h2>
 
-        <a href="#prediction">AI Prediction</a>
+                <p>
+                    AI Dynamic Pricing System
+                </p>
 
-        <a href="#report">AI Report</a>
+            </div>
 
-        <a href="#footer">Contact</a>
+        </div>
 
-    </div>
 
-</nav>
+        <nav>
 
-<section class="hero">
+            <a href="#home">
+                Home
+            </a>
 
-    <div class="hero-overlay">
+            <a href="#predictor">
+                Price Predictor
+            </a>
 
-        <h1>Lotus Holiday Resort</h1>
+            <a href="#analytics">
+                Analytics
+            </a>
 
-        <p>AI Dynamic Room Price Recommendation System</p>
+            <a href="#ml">
+                ML Pipeline
+            </a>
 
-    </div>
-
-</section>
-
-<section class="stats">
-
-    <div class="stat-card">
-
-        <h2>22</h2>
-
-        <p>Total Rooms</p>
-
-    </div>
-
-    <div class="stat-card">
-
-        <h2>5</h2>
-
-        <p>Room Types</p>
-
-    </div>
-
-    <div class="stat-card">
-
-        <h2>24×7</h2>
-
-        <p>Reception</p>
-
-    </div>
-
-    <div class="stat-card">
-
-        <h2>AI</h2>
-
-        <p>Smart Pricing</p>
-
-    </div>
-
-</section>
-
-<div class="container">
-
-    <div class="card">
-
-        <h2>About Resort</h2>
-
-        <p>📍 Diveagar, Shrivardhan, Raigad, Maharashtra</p>
-
-        <p>📞 +91 8975409789</p>
-
-        <p>🏖 3 Minutes Walk from Beach</p>
-
-        <p>🏊 Swimming Pool</p>
-
-        <p>🌳 Garden</p>
-
-        <p>🧒 Kids Play Area</p>
-
-        <p>📶 Free WiFi</p>
-
-        <p>🚗 Free Parking</p>
-
-        <p>🍽 Multi Cuisine Restaurant</p>
-
-    </div>
-
-    <div class="card" id="prediction">
-
-        <h2>AI Price Prediction</h2>
-
-        <form id="predictionForm">
-
-            <label>Room Type</label>
-
-            <select id="room_type">
-
-                {% for room in room_types %}
-
-                <option value="{{ room }}">
-
-                    {{ room }}
-
-                </option>
-
-                {% endfor %}
-
-            </select>
-
-            <label>Day Type</label>
-
-            <select id="day_type">
-
-                {% for day in day_types %}
-
-                <option value="{{ day }}">
-
-                    {{ day }}
-
-                </option>
-
-                {% endfor %}
-
-            </select>
-
-            <label>Season</label>
-
-            <select id="season">
-
-                {% for season in seasons %}
-
-                <option value="{{ season }}">
-
-                    {{ season }}
-
-                </option>
-
-                {% endfor %}
-
-            </select>
-
-            <label>Guests</label>
-
-            <input
-                type="number"
-                id="guests"
-                value="2"
-                min="1"
+            <a
+                href="https://lotusholidayresort.com/"
+                target="_blank"
+                class="website-button"
             >
+                Visit Resort ↗
+            </a>
 
-            <label>Extra Guests</label>
+        </nav>
 
-            <input
-                type="number"
-                id="extra_guests"
-                value="0"
-                min="0"
-            >
+    </header>
 
-            <button type="submit">
 
-                🤖 Generate AI Recommendation
+    <!-- Main -->
 
-            </button>
+    <main id="home">
 
-        </form>
 
-    </div>
+        <!-- Hero -->
 
-    <div class="card result-card">
+        <section class="hero">
 
-        <h2>AI Recommendation</h2>
+            <div class="hero-badge">
+                ✨ AI POWERED ROOM PRICING
+            </div>
 
-        <div id="result">
-
-            <h1>₹ --</h1>
+            <h1>
+                Predict Your Room Price
+            </h1>
 
             <p>
+                Enter your booking details and let our
+                Machine Learning model recommend the
+                base room price.
+            </p>
 
-                Fill the details and click
+        </section>
 
-                <strong>Generate AI Recommendation</strong>
 
+        <!-- Predictor -->
+
+        <section
+            id="predictor"
+            class="predictor-section"
+        >
+
+            <!-- Booking Form -->
+
+            <div class="card booking-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon">
+                        🏨
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Booking Information
+                        </h2>
+
+                        <p>
+                            Enter your booking details
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form id="predictionForm">
+
+
+                    <!-- Room Type -->
+
+                    <div class="form-group">
+
+                        <label for="roomType">
+                            Room Type
+                        </label>
+
+                        <select
+                            id="roomType"
+                            name="Room_Type"
+                            required
+                        >
+
+                            <option value="">
+                                Select Room Type
+                            </option>
+
+                            <option value="AC Cottage">
+                                AC Cottage
+                            </option>
+
+                            <option value="AC Suite Room With Jacuzzi">
+                                AC Suite Room With Jacuzzi
+                            </option>
+
+                            <option value="AC Executive Suite Room">
+                                AC Executive Suite Room
+                            </option>
+
+                            <option value="AC Deluxe Cottage">
+                                AC Deluxe Cottage
+                            </option>
+
+                            <option value="AC Executive Rooms">
+                                AC Executive Rooms
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Day Type -->
+
+                    <div class="form-group">
+
+                        <label for="dayType">
+                            Day Type
+                        </label>
+
+                        <select
+                            id="dayType"
+                            name="Day_Type"
+                            required
+                        >
+
+                            <option value="">
+                                Select Day Type
+                            </option>
+
+                            <option value="Weekday">
+                                Weekday
+                            </option>
+
+                            <option value="Weekend">
+                                Weekend
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Season -->
+
+                    <div class="form-group">
+
+                        <label for="season">
+                            Season
+                        </label>
+
+                        <select
+                            id="season"
+                            name="Season"
+                            required
+                        >
+
+                            <option value="">
+                                Select Season
+                            </option>
+
+                            <option value="Normal">
+                                Normal
+                            </option>
+
+                            <option value="Summer">
+                                Summer
+                            </option>
+
+                            <option value="Monsoon">
+                                Monsoon
+                            </option>
+
+                            <option value="Festival">
+                                Festival
+                            </option>
+
+                            <option value="New Year">
+                                New Year
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Guests -->
+
+                    <div class="two-column">
+
+
+                        <div class="form-group">
+
+                            <label for="guests">
+                                Number of Guests
+                            </label>
+
+                            <input
+                                type="number"
+                                id="guests"
+                                name="Guests"
+                                min="1"
+                                value="2"
+                                required
+                            >
+
+                            <small>
+                                Enter the number of guests
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="extraGuests">
+                                Extra Guests
+                            </label>
+
+                            <input
+                                type="number"
+                                id="extraGuests"
+                                name="Extra_Guests"
+                                min="0"
+                                value="0"
+                                required
+                            >
+
+                            <small>
+                                ₹800 per extra guest
+                            </small>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- Error -->
+
+                    <div
+                        id="formError"
+                        class="error-message"
+                    ></div>
+
+
+                    <!-- Button -->
+
+                    <button
+                        type="submit"
+                        id="predictButton"
+                        class="predict-button"
+                    >
+
+                        <span>
+                            ✨
+                        </span>
+
+                        Predict Room Price
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Result -->
+
+            <div class="card result-card">
+
+                <div class="result-label">
+                    AI RECOMMENDATION
+                </div>
+
+                <div class="result-heading">
+
+                    <div>
+
+                        <h2>
+                            Recommended Base Price
+                        </h2>
+
+                        <p>
+                            AI predicted room price
+                        </p>
+
+                    </div>
+
+                    <div class="money-icon">
+                        💰
+                    </div>
+
+                </div>
+
+
+                <!-- Main Price -->
+
+                <div class="main-price">
+
+                    <span>
+                        ₹
+                    </span>
+
+                    <strong id="basePrice">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <!-- Price Details -->
+
+                <div class="price-details">
+
+
+                    <div class="price-row">
+
+                        <span>
+                            Base Price
+                        </span>
+
+                        <strong id="basePriceDetail">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="price-row">
+
+                        <span>
+                            Extra Guest Charge
+                        </span>
+
+                        <strong id="extraGuestCharge">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="price-row total-row">
+
+                        <span>
+                            Estimated Total
+                        </span>
+
+                        <strong id="totalPrice">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Booking Details -->
+
+                <div class="details-grid">
+
+
+                    <div class="detail-box">
+
+                        <span>
+                            Room
+                        </span>
+
+                        <strong id="resultRoom">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-box">
+
+                        <span>
+                            Day
+                        </span>
+
+                        <strong id="resultDay">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-box">
+
+                        <span>
+                            Season
+                        </span>
+
+                        <strong id="resultSeason">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-box">
+
+                        <span>
+                            Guests
+                        </span>
+
+                        <strong id="resultGuests">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Message -->
+
+                <div
+                    id="resultMessage"
+                    class="result-message"
+                >
+
+                    ✨ Select your booking details
+                    and generate your AI recommendation.
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Graphs -->
+
+        <section
+            id="analytics"
+            class="section"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        ANALYTICS
+                    </span>
+
+                    <h2>
+                        Resort Price Analytics
+                    </h2>
+
+                    <p>
+                        Visual insights generated from
+                        the room pricing dataset.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="graph-grid">
+
+
+                <div class="graph-card">
+
+                    <h3>
+                        Average Room Price
+                    </h3>
+
+                    <img
+                        src="{{ url_for('static', filename='graphs/price_graph.png') }}"
+                        alt="Room Price Graph"
+                    >
+
+                </div>
+
+
+                <div class="graph-card">
+
+                    <h3>
+                        Guest Distribution
+                    </h3>
+
+                    <img
+                        src="{{ url_for('static', filename='graphs/guest_graph.png') }}"
+                        alt="Guest Graph"
+                    >
+
+                </div>
+
+
+                <div class="graph-card">
+
+                    <h3>
+                        Average Guests
+                    </h3>
+
+                    <img
+                        src="{{ url_for('static', filename='graphs/occupancy_graph.png') }}"
+                        alt="Occupancy Graph"
+                    >
+
+                </div>
+
+
+                <div class="graph-card">
+
+                    <h3>
+                        Extra Guest Distribution
+                    </h3>
+
+                    <img
+                        src="{{ url_for('static', filename='graphs/extra_guest_graph.png') }}"
+                        alt="Extra Guest Graph"
+                    >
+
+                </div>
+
+
+                <div class="graph-card">
+
+                    <h3>
+                        Day Type Pricing
+                    </h3>
+
+                    <img
+                        src="{{ url_for('static', filename='graphs/day_price_graph.png') }}"
+                        alt="Day Price Graph"
+                    >
+
+                </div>
+
+
+                <div class="graph-card">
+
+                    <h3>
+                        Seasonal Pricing
+                    </h3>
+
+                    <img
+                        src="{{ url_for('static', filename='graphs/season_graph.png') }}"
+                        alt="Season Graph"
+                    >
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ML Pipeline -->
+
+        <section
+            id="ml"
+            class="section"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        MACHINE LEARNING
+                    </span>
+
+                    <h2>
+                        Complete ML Pipeline
+                    </h2>
+
+                    <p>
+                        The system follows a complete
+                        machine learning workflow.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="pipeline-grid">
+
+
+                <div class="pipeline-step">
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        Data Collection
+                    </h3>
+
+                    <p>
+                        Room pricing data is collected
+                        from the dataset.
+                    </p>
+
+                </div>
+
+
+                <div class="pipeline-step">
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        Data Cleaning
+                    </h3>
+
+                    <p>
+                        Duplicate and missing data
+                        are handled.
+                    </p>
+
+                </div>
+
+
+                <div class="pipeline-step">
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        EDA
+                    </h3>
+
+                    <p>
+                        Dataset patterns and
+                        distributions are analyzed.
+                    </p>
+
+                </div>
+
+
+                <div class="pipeline-step">
+
+                    <span>
+                        04
+                    </span>
+
+                    <h3>
+                        Feature Encoding
+                    </h3>
+
+                    <p>
+                        Categorical features are
+                        encoded using OneHotEncoder.
+                    </p>
+
+                </div>
+
+
+                <div class="pipeline-step">
+
+                    <span>
+                        05
+                    </span>
+
+                    <h3>
+                        Feature Scaling
+                    </h3>
+
+                    <p>
+                        Numerical features are
+                        standardized.
+                    </p>
+
+                </div>
+
+
+                <div class="pipeline-step">
+
+                    <span>
+                        06
+                    </span>
+
+                    <h3>
+                        Train-Test Split
+                    </h3>
+
+                    <p>
+                        Data is divided into training
+                        and testing sets.
+                    </p>
+
+                </div>
+
+
+                <div class="pipeline-step">
+
+                    <span>
+                        07
+                    </span>
+
+                    <h3>
+                        Model Training
+                    </h3>
+
+                    <p>
+                        Multiple regression models
+                        are trained.
+                    </p>
+
+                </div>
+
+
+                <div class="pipeline-step">
+
+                    <span>
+                        08
+                    </span>
+
+                    <h3>
+                        Cross Validation
+                    </h3>
+
+                    <p>
+                        Model stability is evaluated
+                        using 5-fold validation.
+                    </p>
+
+                </div>
+
+
+                <div class="pipeline-step">
+
+                    <span>
+                        09
+                    </span>
+
+                    <h3>
+                        GridSearchCV
+                    </h3>
+
+                    <p>
+                        Random Forest parameters
+                        are optimized.
+                    </p>
+
+                </div>
+
+
+                <div class="pipeline-step">
+
+                    <span>
+                        10
+                    </span>
+
+                    <h3>
+                        Best Model
+                    </h3>
+
+                    <p>
+                        The optimized model is
+                        saved as best_model.pkl.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Model Comparison -->
+
+            <div class="analytics-card">
+
+                <div class="analytics-title">
+
+                    <div>
+
+                        <span class="section-label">
+                            MODEL EVALUATION
+                        </span>
+
+                        <h2>
+                            Model Comparison
+                        </h2>
+
+                        <p>
+                            Performance on the test dataset.
+                        </p>
+
+                    </div>
+
+                    <span class="pink-badge">
+                        🏆 Random Forest
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="modelComparison"
+                    class="table-container"
+                >
+
+                    Loading model results...
+
+                </div>
+
+            </div>
+
+
+            <!-- Cross Validation -->
+
+            <div class="analytics-card">
+
+                <div class="analytics-title">
+
+                    <div>
+
+                        <span class="section-label">
+                            VALIDATION
+                        </span>
+
+                        <h2>
+                            Cross Validation
+                        </h2>
+
+                        <p>
+                            Five-fold cross validation
+                            results.
+                        </p>
+
+                    </div>
+
+                    <span class="pink-badge">
+                        5-Fold CV
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="crossValidation"
+                    class="table-container"
+                >
+
+                    Loading cross-validation results...
+
+                </div>
+
+            </div>
+
+
+            <!-- Grid Search -->
+
+            <div class="analytics-card">
+
+                <div class="analytics-title">
+
+                    <div>
+
+                        <span class="section-label">
+                            OPTIMIZATION
+                        </span>
+
+                        <h2>
+                            GridSearchCV
+                        </h2>
+
+                        <p>
+                            Random Forest hyperparameters
+                            are optimized using cross validation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="gridSearch"
+                    class="grid-result"
+                >
+
+                    Loading GridSearchCV results...
+
+                </div>
+
+            </div>
+
+
+            <!-- EDA Summary -->
+
+            <div class="analytics-card">
+
+                <div class="analytics-title">
+
+                    <div>
+
+                        <span class="section-label">
+                            DATASET
+                        </span>
+
+                        <h2>
+                            EDA Summary
+                        </h2>
+
+                        <p>
+                            Summary statistics of the
+                            cleaned dataset.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="edaSummary"
+                    class="eda-grid"
+                >
+
+                    Loading dataset summary...
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Resort -->
+
+        <section class="resort-section">
+
+            <div>
+
+                <span class="section-label">
+                    LOTUS HOLIDAY RESORT
+                </span>
+
+                <h2>
+                    Plan Your Stay at Diveagar
+                </h2>
+
+                <p>
+                    Explore Lotus Holiday Resort and
+                    discover comfortable rooms, beautiful
+                    surroundings and a relaxing stay.
+                </p>
+
+            </div>
+
+
+            <a
+                href="https://lotusholidayresort.com/"
+                target="_blank"
+                class="resort-button"
+            >
+
+                Visit Lotus Holiday Resort ↗
+
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div>
+
+            <strong>
+                🌿 Lotus Holiday Resort
+            </strong>
+
+            <p>
+                AI Dynamic Room Pricing System
             </p>
 
         </div>
 
-        <div class="analytics">
 
-            <div class="analytics-box">
+        <div>
 
-                <h3>Demand</h3>
-
-                <span id="demand">--</span>
-
-            </div>
-
-            <div class="analytics-box">
-
-                <h3>Occupancy</h3>
-
-                <span id="occupancy">--</span>
-
-            </div>
-
-            <div class="analytics-box">
-
-                <h3>Trend</h3>
-
-                <span id="trend">--</span>
-
-            </div>
-
-            <div class="analytics-box">
-
-                <h3>Confidence</h3>
-
-                <span id="confidence">96%</span>
-
-            </div>
-
-        </div>
-                <div class="summary-card">
-
-            <h2>Booking Summary</h2>
-
-            <div id="summary">
-
-                Booking summary will appear here after prediction.
-
-            </div>
+            <a
+                href="https://lotusholidayresort.com/"
+                target="_blank"
+            >
+                Official Resort Website
+            </a>
 
         </div>
 
-        <div class="ai-card">
+    </footer>
 
-            <h2>AI Recommendation</h2>
 
-            <div id="recommendation">
+    <!-- JavaScript -->
 
-                AI recommendation will appear here.
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<section id="report" class="graph-section">
-
-    <div class="card">
-
-        <h2>📊 AI Generated Analytics Report</h2>
-
-        <p class="text-center">
-
-            These graphs are generated automatically by Python after every prediction.
-
-        </p>
-
-        <div class="graph-grid">
-
-            <div class="graph-card">
-
-                <h3>AI Price Analysis</h3>
-
-                <img
-
-                    id="priceGraph"
-
-                    src=""
-
-                    alt="Price Analysis Graph"
-
-                >
-
-            </div>
-
-            <div class="graph-card">
-
-                <h3>Guest Distribution</h3>
-
-                <img
-
-                    id="guestGraph"
-
-                    src=""
-
-                    alt="Guest Distribution Graph"
-
-                >
-
-            </div>
-
-            <div class="graph-card">
-
-                <h3>Expected Occupancy</h3>
-
-                <img
-
-                    id="occupancyGraph"
-
-                    src=""
-
-                    alt="Occupancy Graph"
-
-                >
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="card">
-
-    <h2>Room Information</h2>
-
-    <table>
-
-        <thead>
-
-            <tr>
-
-                <th>Room Type</th>
-
-                <th>Capacity</th>
-
-            </tr>
-
-        </thead>
-
-        <tbody>
-
-            <tr>
-
-                <td>AC Cottage</td>
-
-                <td>2 Guests</td>
-
-            </tr>
-
-            <tr>
-
-                <td>AC Deluxe Cottage</td>
-
-                <td>2 Guests</td>
-
-            </tr>
-
-            <tr>
-
-                <td>AC Executive Room</td>
-
-                <td>2 Guests</td>
-
-            </tr>
-
-            <tr>
-
-                <td>Suite With Jacuzzi</td>
-
-                <td>6 Guests</td>
-
-            </tr>
-
-            <tr>
-
-                <td>Executive Suite</td>
-
-                <td>8 Guests</td>
-
-            </tr>
-
-        </tbody>
-
-    </table>
-
-</section>
-
-<footer id="footer">
-
-    <h3>Lotus Holiday Resort</h3>
-
-    <p>
-
-        AI Dynamic Room Price Recommendation System
-
-    </p>
-
-    <p>
-
-        Developed by
-
-        <strong>Yadnya Pingale</strong>
-
-    </p>
-
-    <p>
-
-        MIT Art, Design & Technology University
-
-    </p>
-
-</footer>
-
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script
+        src="{{ url_for('static', filename='script.js') }}"
+    ></script>
 
 </body>
 

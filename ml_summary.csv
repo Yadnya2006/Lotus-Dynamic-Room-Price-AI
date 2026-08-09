@@ -1,0 +1,2 @@
+Best_Model,MAE,RMSE,R2,Training_Rows,Testing_Rows
+Random Forest GridSearchCV,236.702,303.1662,0.9936,796,200
